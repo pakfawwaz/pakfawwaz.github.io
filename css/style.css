@@ -1831,12 +1831,7 @@ body.offcanvas .colorlib-nav-toggle {
 .js .animate-box {
   opacity: 0; }
 
-.hr.light {
-    border-top:1px solid #d5d5d5;
-    width: 75%;
-    margin-top: .8rem;
-    margin-bottom: 1 rem
-  }
+
 .wrimagecard {
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -1874,4 +1869,10 @@ a.wrimagecard:hover,
   text-decoration: none;
   color: #525c65;
   transition: color 0.3s ease;
+}
+.hr.light {
+  border-top:1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1 rem
 }
