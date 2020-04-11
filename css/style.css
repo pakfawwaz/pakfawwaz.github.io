@@ -1829,9 +1829,14 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .js .animate-box {
-  opacity: 0;
-}
+  opacity: 0; }
 
+.hr.light {
+    border-top:1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1 rem
+  }
 .wrimagecard {
   margin-top: 0;
   margin-bottom: 1.5rem;
