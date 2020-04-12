@@ -17,7 +17,7 @@ class Energi_foton{
 $x2=10**8;
 $konstanta_plank=6.6*$x1;
 $konstanta_c=3*$x2;
-        $brow=$konstanta_plank*$konstanta_c/$lamda;
+        $brow=$konstanta_plank*$konstanta_c/$lamda*10**-10;
         echo ($brow);
 
     }
