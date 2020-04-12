@@ -12,12 +12,20 @@ $konstanta_plank=6.6*$x1;
 $konstanta_c=3*$x2;
 
 class Energi_foton{
-    function lamda (){
+    function lamda ($lamda){
+        $x1=10**-34;
+$x2=10**8;
+$konstanta_plank=6.6*$x1;
+$konstanta_c=3*$x2;
         $brow=$konstanta_plank*$konstanta_c/$lamda;
+        echo ($brow);
 
     }
-    function frekwensi (){
-        $f;
+    function frekwensi ($frekuensi){
+        $x1=10**-34;
+$x2=10**8;
+$konstanta_plank=6.6*$x1;
+$konstanta_c=3*$x2;
         $bruh=$konstanta_plank*$frekuensi;
         echo ($bruh);
 
