@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <?php
 
-$umur = $_POST['umur'];
-$nama = $_POST['name'];
-$email = $_POST['email'];
+$frekuensi = $_POST['frekuensi'];
+$lamda = $_POST['lamda'];
+$soal = $_POST['soal'];
 
 
+$x1=10**-34;
+$x2=10**8;
+$konstanta_plank=6.6*$x1;
+$konstanta_c=3*$x2;
 
-echo "<br>";
-echo "Usia".$umur;
-echo "<br>";
-echo "Email".$email;
-echo "<br>";
+class Energi_foton{
+    function lamda (){
+        $brow=$konstanta_plank*$konstanta_c/$lamda;
 
+    }
+    function frekwensi (){
+        $f;
+        $bruh=$konstanta_plank*$frekuensi;
+        echo ($bruh);
 
-class perulangan {
+    }
     
-    function fungsiumur($umur){
-        for ($x = 0; $x <= $umur; $x++) {
-            echo "Hehehehe $x <br>";
-        }
-        if($umur<25){
-            echo "Tobat kamu masih polos";
-            echo "<br>";
-        } else {
-            echo "Halo";
-            echo "<br>";
-        }
-    }
-    function fungsinama($nama){
-        echo "Halo".$nama;
-    }
-}
-$y = new perulangan();
 
-echo $y -> fungsiumur($umur);
-echo $y -> fungsinama($nama);
+}
+$hore= new Energi_foton();
+
+if($soal=1){
+    echo $hore -> lamda ($lamda);
+}
+else{
+    echo $hore -> frekwensi ($frekuensi);
+}
