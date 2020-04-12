@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <?php
 
-$umur = $_GET['umur'];
-$nama = $_GET['name'];
-$email = $_GET['email'];
+$umur = $_POST['umur'];
+$nama = $_POST['name'];
+$email = $_POST['email'];
 
 
 
