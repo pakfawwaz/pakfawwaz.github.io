@@ -51,9 +51,14 @@ class relativitas{
 
 class Energi_foton{
     function lamda (){
+        $lamdaa;
+        $brow=$konstanta_plank*$konstanta_c/$lamdaa;
 
     }
     function frekwensi (){
+        $f;
+        $bruh=$konstanta_plank*$f;
+        echo ($bruh);
 
     }
     if(){
