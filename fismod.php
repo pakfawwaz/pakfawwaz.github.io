@@ -1,4 +1,8 @@
 <?php
+$x1=10**-34;
+$x2=10**8;
+$konstanta_plank=6.6*$x1;
+$konstanta_c=3*$x2;
 
 class relativitas{
     function kecepatan (){
@@ -51,23 +55,13 @@ class Energi_foton{
     }
     function frekwensi (){
 
-    } 
-
+    }
     if(){
         lamda ()
     }
     else{
         frekwensi ()
-    }
-
-}
-class Efek_fotolistrik{
-    function frekuensi(){
-
-    }
-    function lamda(){
-
-    }
+    } 
 
 }
 class Efek_compton{
@@ -85,3 +79,6 @@ class Efek_compton{
     }
 
 }
+
+?>
+
