@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<?php
+$message = "";
+if(isset($_POST['SubmitButton'])){ //check if form was submitted
+  $input = $_POST['inputText']; //get input text
+  $message = "Success! You entered: ".$input;
+  echo $message;
+}    
+?>

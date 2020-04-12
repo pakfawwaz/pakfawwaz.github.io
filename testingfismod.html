@@ -1,15 +1,6 @@
-<?php
-$message = "";
-if(isset($_POST['SubmitButton'])){ //check if form was submitted
-  $input = $_POST['inputText']; //get input text
-  $message = "Success! You entered: ".$input;
-}    
-?>
-
 <html>
 <body>    
-<form action="" method="post">
-<?php echo $message; ?>
+<form action="fismodtesting.php" method="post">
   <input type="text" name="inputText"/>
   <input type="submit" name="SubmitButton"/>
 </form>    
