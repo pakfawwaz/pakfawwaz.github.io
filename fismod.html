@@ -8,41 +8,43 @@
                       <option value = "1">frekuensi</option>
                       <option value = "2">lamda</option>
                     </select>
-    frekuensi <input type="number" name="frekuensi">
-    lamda <input type="number" name="lamda">
+    frekuensi <input type="number" name="frekuensi" placeholder="1.00" step="0.01" min="0">
+    lamda <input type="number" name="lamda" placeholder="1.00" step="0.01" min="0">
     <input type="submit">
   </form>
-  <p>
+  <!-- <p>
     Relativitas Kecepatan
   </p> 
   <form action="fismod.php" method="POST">
     Yang Diketahui <select name = "soal1">
       <option value = "1">frekuensi</option>
       <option value = "2">lamda</option>
-    frekuensi <input type="number" name="frekuensi">
-    lamda <input type="number" name="lamda">
+    frekuensi <input type="number" name="frekuensi" placeholder="1.00" step="0.01" min="0">
+    lamda <input type="number" name="lamda" placeholder="1.00" step="0.01" min="0">
     <input type="submit">
-  </form> 
+  </form>  -->
   <p>
     Relativitas Panjang
   </p> 
   <form action="fismod.php" method="POST">
-    Yang Diketahui <select name = "soal2">
-      <option value = "1">frekuensi</option>
-      <option value = "2">lamda</option>
-    Panjang di Bumi <input type="number" name="frekuensi">
-    Kecepatan <input type="number" name="lamda"> C
+    Yang Ditanya <select name = "soal2">
+      <option value = "1">Panjang Relatif</option>
+      <option value = "2">Panjang Bumi</option>
+    Panjang di Bumi <input type="number" name="p_bumi" placeholder="1.00" step="0.01" min="0">
+    Panjang Relatif <input type="number" name="p_relatif" placeholder="1.00" step="0.01" min="0">
+    Kecepatan <input type="number" name="p_kec" placeholder="1.00" step="0.01" min="0"> C
     <input type="submit">
   </form>
   <p>
     Relativitas Waktu
   </p> 
   <form action="fismod.php" method="POST">
-    Yang Diketahui <select name = "soal3">
-      <option value = "1">frekuensi</option>
-      <option value = "2">lamda</option>
-    Waktu di Bumi <input type="number" name="frekuensi">
-    Kecepatan <input type="number" name="lamda"> C
+    Yang Ditanya <select name = "soal3">
+      <option value = "1">Waktu Relatif</option>
+      <option value = "2">Waktu Bumi</option>
+    Waktu di Bumi <input type="number" name="w_bumi" placeholder="1.00" step="0.01" min="0">
+    Waktu Relatif <input type="number" name="w_relatif" placeholder="1.00" step="0.01" min="0">
+    Kecepatan <input type="number" name="w_kec" placeholder="1.00" step="0.01" min="0"> C
     <input type="submit">
   </form>
   <p>
@@ -53,18 +55,19 @@
                     <option value = "1">Massa Relatif</option>
                     <option value = "2">Massa Di Bumi</option>
     </select>
-    Massa di Bumi <input type="number" name="m_bumi">
-    Massa Relatif <input type="number" name="m_relatif">
-    Kecepatan <input type="number" name="m_kec"> C
+    Massa di Bumi <input type="number" name="m_bumi" placeholder="1.00" step="0.01" min="0">
+    Massa Relatif <input type="number" name="m_relatif" placeholder="1.00" step="0.01" min="0">
+    Kecepatan <input type="number" name="m_kec" placeholder="1.00" step="0.01" min="0"> C
     <input type="submit">
   </form>
   <p>
     Energi Kinetik Relativitas
   </p> 
   <form action="fismod.php" method="POST">
-    Yang Diketahui <input type="number" name="soal5">
-    frekuensi <input type="number" name="frekuensi">
-    lamda <input type="number" name="lamda">
+    Yang Ditanya <select name = "soal5">
+      <option value = "1">Energi Kinetik</option>
+    Massa Bumi <input type="number" name="e_m_bumi" placeholder="1.00" step="0.01" min="0">
+    Kecepatan <input type="number" name="e_kec" placeholder="1.00" step="0.01" min="0"> C
     <input type="submit">
   </form>  
      
