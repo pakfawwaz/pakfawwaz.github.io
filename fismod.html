@@ -4,18 +4,30 @@
     Energi Foton
   </p>    
   <form action="Energifoton.php" method="POST">
-    Yang Diketahui <input type="number" name="soal">
+    Yang Diketahui  <select name = "dropdown">
+                      <option value = "1">frekuensi</option>
+                      <option value = "2" selected >lamda</option>
+                    </select>
     frekuensi <input type="number" name="frekuensi">
     lamda <input type="number" name="lamda">
     <input type="submit">
   </form>
   <p>
+    Relativitas Kecepatan
+  </p> 
+  <form action="relativitaskecepatan.php" method="POST">
+    Yang Diketahui <input type="number" name="soal1">
+    frekuensi <input type="number" name="frekuensi">
+    lamda <input type="number" name="lamda">
+    <input type="submit">
+  </form> 
+  <p>
     Relativitas Panjang
   </p> 
   <form action="relativitaspanjang.php" method="POST">
     Yang Diketahui <input type="number" name="soal">
-    frekuensi <input type="number" name="frekuensi">
-    lamda <input type="number" name="lamda">
+    Panjang di Bumi <input type="number" name="frekuensi">
+    Kecepatan <input type="number" name="lamda"> C
     <input type="submit">
   </form>
   <p>
@@ -23,8 +35,8 @@
   </p> 
   <form action="relativitaswaktu.php" method="POST">
     Yang Diketahui <input type="number" name="soal">
-    frekuensi <input type="number" name="frekuensi">
-    lamda <input type="number" name="lamda">
+    Waktu di Bumi <input type="number" name="frekuensi">
+    Kecepatan <input type="number" name="lamda"> C
     <input type="submit">
   </form>
   <p>
@@ -32,8 +44,8 @@
   </p> 
   <form action="relativitasmassa.php" method="POST">
     Yang Diketahui <input type="number" name="soal">
-    frekuensi <input type="number" name="frekuensi">
-    lamda <input type="number" name="lamda">
+    Massa di Bumi <input type="number" name="frekuensi">
+    Kecepatan <input type="number" name="lamda"> C
     <input type="submit">
   </form>
   <p>
@@ -45,14 +57,6 @@
     lamda <input type="number" name="lamda">
     <input type="submit">
   </form>  
-  <p>
-    Relativitas Kecepatan
-  </p> 
-  <form action="relativitaskecepatan.php" method="POST">
-    Yang Diketahui <input type="number" name="soal">
-    frekuensi <input type="number" name="frekuensi">
-    lamda <input type="number" name="lamda">
-    <input type="submit">
-  </form>    
+     
 </body>
 </html>
