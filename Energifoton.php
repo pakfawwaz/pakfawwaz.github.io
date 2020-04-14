@@ -11,8 +11,9 @@ $x2=10**8;
 $konstanta_plank=6.6*$x1;
 $konstanta_c=3*$x2;
 
-class Energi_foton{
+class Energi_foton_lamda{
     function lamda ($lamda){
+        echo("ancok");
         $x1=10**-34;
         $x2=10**8;
         $konstanta_plank=6.6*$x1;
@@ -20,8 +21,12 @@ class Energi_foton{
         $brow=$konstanta_plank*$konstanta_c/$lamda*10**-10;
         echo ($brow);
 
+
     }
+}
+class Energi_foton_frek{
     function frekwensi ($frekuensi){
+        echo("mbokne");
         $x1=10**-34;
         $x2=10**8;
         $konstanta_plank=6.6*$x1;
@@ -30,14 +35,13 @@ class Energi_foton{
         echo ($bruh);
 
     }
-    
-
 }
-$hore= new Energi_foton();
+$hore= new Energi_foton_lamda();
+$mbokne= new Energi_foton_frek();
 
 if($soal=2){
     echo $hore -> lamda ($lamda);
 }
 else if ($soal=1){
-    echo $hore -> frekwensi ($frekuensi);
+    echo $mbokne -> frekwensi ($frekuensi);
 }
