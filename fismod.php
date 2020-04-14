@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <?php
 
-$frekuensi = $_POST['frekuensi'];
-$lamda = $_POST['lamda'];
-$soal = $_POST['soal'];
-$m_relatif = $_POST['m_relatif'];
-$m_bumi = $_POST['m_bumi'];
-$m_kec = $_POST['m_kec'];
 $x1=10**-34;
 $x2=10**8;
 $konstanta_plank=6.6*$x1;
@@ -59,23 +53,44 @@ class relativitas_massa{
 
 }
 
-$hore= new Energi_foton();
-$hore4= new relativitas_massa();
 
-if($soal=="1"){
-    
-    echo $hore -> frekwensi ($frekuensi);
+
+
+if ($_POST['soal']){
+    $hore= new Energi_foton();
+    if($soal=="1"){
+        $frekuensi = $_POST['frekuensi'];
+        $lamda = $_POST['lamda'];
+        $soal = $_POST['soal'];
+        
+        echo $hore -> frekwensi ($frekuensi);
+    }
+    else if ($soal=="2"){
+        $frekuensi = $_POST['frekuensi'];
+        $lamda = $_POST['lamda'];
+        $soal = $_POST['soal'];
+        
+        echo $hore -> lamda ($lamda);
+    }
+
 }
-else if ($soal=="2"){
-    
-    echo $hore -> lamda ($lamda);
+elseif($_POST['soal4']){
+    $hore4= new relativitas_massa();
+    if($soal4 =="1"){
+        $m_relatif = $_POST['m_relatif'];
+        $m_bumi = $_POST['m_bumi'];
+        $m_kec = $_POST['m_kec'];
+        
+        echo $hore4 -> massa_relatif ($m_bumi,$m_kec);
+    }
+    else if ($soal4 =="2"){
+        $m_relatif = $_POST['m_relatif'];
+        $m_bumi = $_POST['m_bumi'];
+        $m_kec = $_POST['m_kec'];
+        
+        echo $hore4 -> massa_bumi ($m_relatif,$m_kec);
+    }
+
 }
 
-if($soal4 =="1"){
-    
-    echo $hore4 -> massa_relatif ($m_bumi,$m_kec);
-}
-else if ($soal4 =="2"){
-    
-    echo $hore4 -> massa_bumi ($m_relatif,$m_kec);
-}
+
