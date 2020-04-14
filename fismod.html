@@ -16,7 +16,9 @@
     Relativitas Kecepatan
   </p> 
   <form action="fismod.php" method="POST">
-    Yang Diketahui <input type="number" name="soal1">
+    Yang Diketahui <select name = "soal1">
+      <option value = "1">frekuensi</option>
+      <option value = "2">lamda</option>
     frekuensi <input type="number" name="frekuensi">
     lamda <input type="number" name="lamda">
     <input type="submit">
@@ -25,7 +27,9 @@
     Relativitas Panjang
   </p> 
   <form action="fismod.php" method="POST">
-    Yang Diketahui <input type="number" name="soal">
+    Yang Diketahui <select name = "soal2">
+      <option value = "1">frekuensi</option>
+      <option value = "2">lamda</option>
     Panjang di Bumi <input type="number" name="frekuensi">
     Kecepatan <input type="number" name="lamda"> C
     <input type="submit">
@@ -34,7 +38,9 @@
     Relativitas Waktu
   </p> 
   <form action="fismod.php" method="POST">
-    Yang Diketahui <input type="number" name="soal">
+    Yang Diketahui <select name = "soal3">
+      <option value = "1">frekuensi</option>
+      <option value = "2">lamda</option>
     Waktu di Bumi <input type="number" name="frekuensi">
     Kecepatan <input type="number" name="lamda"> C
     <input type="submit">
@@ -43,16 +49,20 @@
     Relativitas Massa
   </p> 
   <form action="fismod.php" method="POST">
-    Yang Diketahui <input type="number" name="soal">
-    Massa di Bumi <input type="number" name="frekuensi">
-    Kecepatan <input type="number" name="lamda"> C
+    Yang Ditanya  <select name = "soal4">
+                    <option value = "1">Massa Relatif</option>
+                    <option value = "2">Massa Di Bumi</option>
+    </select>
+    Massa di Bumi <input type="number" name="m_bumi">
+    Massa Relatif <input type="number" name="m_relatif">
+    Kecepatan <input type="number" name="m_kec"> C
     <input type="submit">
   </form>
   <p>
     Energi Kinetik Relativitas
   </p> 
   <form action="fismod.php" method="POST">
-    Yang Diketahui <input type="number" name="soal">
+    Yang Diketahui <input type="number" name="soal5">
     frekuensi <input type="number" name="frekuensi">
     lamda <input type="number" name="lamda">
     <input type="submit">
