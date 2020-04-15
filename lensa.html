@@ -47,22 +47,30 @@
       </nav>
       <h1 class="display-2" style="text-align: center;">Kalkulator Lensa</h1>
 
-        <h6 class="display-4"> Lensa cekung </h6> 
+         
         <div class="container-fluid padding">
           <div class="row padding">
-              <div class="col-md-12 col-lg-6">>   
+              <div class="col-md-12 col-lg-6">
           <form action="lensa.php" method="POST">
+            <h6 class="display-4"> Lensa cekung </h6>
             <h6>Isikan apa yang ingin anda temukan nilainya?</h6>  
-            <select name = "soale">
-                              <option value = "1">Jarak titik fokus</option>
-                              <option value = "2">Jarak Benda</option>
-                              <option value = "3">Jarak Bayangan</option>
-                              <option value = "4">Jari-jari Lensa</option>
-                              <option value = "5">Perbesaran</option>
-                            </select>
+            <div class="dropdown" >
+              <button class="btn btn-info dropdown-toggle"> Isikan disini </div>
+                <select class="dropdown-menu" name = "soale">
+                              <option class="dropdown-item" value = "1">Jarak titik fokus</option>
+                              <option class="dropdown-item" value = "2">Jarak Benda</option>
+                              <option class="dropdown-item" value = "3">Jarak Bayangan</option>
+                              <option class="dropdown-item" value = "4">Jari-jari Lensa</option>
+                              <option class="dropdown-item" value = "5">Perbesaran</option>
+                </select>
+            </div>
+            <br>
             fokus <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0">
+            <br>
             jarak benda <input type="number" name="jarak_benda_k" placeholder="1.00" step="0.01" min="0">
+            <br>
             jarak bayangan <input type="number" name="jarak_bayangan_k" placeholder="1.00" step="0.01" min="0">
+            <br>
             jari-jari lensa <input type="number" name="jari_lensa_k" placeholder="1.00" step="0.01" min="0">
             <input type="submit">
           </form>
