@@ -1,36 +1,36 @@
 <?php
 class lensa_cekung{
-    function fokus(){
+    function fokus($jarak_bayangan_k,$jarak_benda_k){
 
     }
-    function jarak_benda_k(){
+    function jarak_benda_k($fokus_k,$jarak_bayangan_k){
 
     }
-    function jarak_bayangan_k(){
+    function jarak_bayangan_k($fokus_k,$jarak_benda_k){
 
     }
-    function jari_lensa_k(){
+    function jari_lensa_k($jarak_bayangan_k,$jarak_benda_k){
 
     }
-    function perbesaran(){
+    function perbesaran($jarak_bayangan_k,$jarak_benda_k){
 
     }
 
 }
 class lensa_cembung{
-    function fokus_b(){
+    function fokus_b($jarak_bayangan_b,$jarak_benda_b){
 
     }
-    function jarak_benda_b(){
+    function jarak_benda_b($fokus_b,$jarak_bayangan_b){
 
     }
-    function jarak_bayangan_b(){
+    function jarak_bayangan_b($fokus_b,$jarak_benda_b){
 
     }
-    function jari_lensa_b(){
+    function jari_lensa_b($jarak_bayangan_b,$jarak_benda_b){
 
     }
-    function perbesaran_b(){
+    function perbesaran_b($jarak_bayangan_b,$jarak_benda_b){
         
     }
 
@@ -43,23 +43,23 @@ if (isset($_POST['soale'])){
     $jari_lensa_k = $_POST['jari_lensa_k'];
     $halo = new lensa_cekung();
     if ($_POST['soale'] == 1){
-        echo $halo -> fokus();
+        echo $halo -> fokus($jarak_bayangan_k,$jarak_benda_k);
 
     }
     elseif ($_POST['soale'] == 2) {
-        echo $halo -> jarak_benda_k();
+        echo $halo -> jarak_benda_k($fokus_k,$jarak_bayangan_k);
         # code...
     }
     elseif ($_POST['soale'] == 3) {
-        echo $halo -> jarak_bayangan_k();
+        echo $halo -> jarak_bayangan_k($fokus_k,$jarak_benda_k);
         # code...
     }
     elseif ($_POST['soale'] == 4) {
-        echo $halo -> jari_lensa_k();
+        echo $halo -> jari_lensa_k($jarak_bayangan_k,$jarak_benda_k);
         # code...
     }
     elseif ($_POST['soale'] == 5) {
-        echo $halo -> perbesaran();
+        echo $halo -> perbesaran($jarak_bayangan_k,$jarak_benda_k);
         # code...
     }
 
@@ -72,23 +72,23 @@ else if (isset($_POST['soale1'])){
     $jari_lensa_b = $_POST['jari_lensa_b'];
     $halo1 = new lensa_cekung();
     if ($_POST['soale1'] == 1){
-        echo $halo -> fokus_b();
+        echo $halo -> fokus_b($jarak_bayangan_b,$jarak_benda_b);
 
     }
     elseif ($_POST['soale1'] == 2) {
-        echo $halo -> jarak_benda_b();
+        echo $halo -> jarak_benda_b($fokus_b,$jarak_bayangan_b);
         # code...
     }
     elseif ($_POST['soale1'] == 3) {
-        echo $halo -> jarak_bayangan_b();
+        echo $halo -> jarak_bayangan_b($fokus_b,$jarak_benda_b);
         # code...
     }
     elseif ($_POST['soale1'] == 4) {
-        echo $halo -> jari_lensa_b();
+        echo $halo -> jari_lensa_b($jarak_bayangan_b,$jarak_benda_b);
         # code...
     }
     elseif ($_POST['soale1'] == 5) {
-        echo $halo -> perbesaran_b();
+        echo $halo -> perbesaran_b($jarak_bayangan_b,$jarak_benda_b);
         # code...
     }
 
