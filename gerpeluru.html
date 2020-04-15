@@ -14,10 +14,9 @@
       <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-          <!--navbar-->
-          <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <!--navbar-->
+            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
             <div class="container-fluid">
-                <!--<a class="navbar-brand" href="#"> <img src="#"></a>-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
                     <span class="navbar-toggler-icon"></span> 
                 </button>
@@ -44,28 +43,46 @@
             </nav>
             <!-- judul -->
             <h1 class="display-4" style="text-align: center;">Kalkulator Gerak Peluru</h1>
-            
             <!-- Kalkulator -->
             <div class="container col-md-10">
-            <p>  
-              Gerak Peluru 
-            </p>  
-            <form action="gerpeluru.php" method="POST">
-            Yang Ditanya  <select name = "soals">
-                              <option value = "1">Jarak Maksimum (X Maks)</option>
-                              <option value = "2">Tinggi Maksimum (Y Maks)</option>
-                              <option value = "3">Waktu pada titik tertinggi (T ketika Y Maks)</option>
-                              <option value = "4">Waktu pada titik terjauh (T ketika X Maks)</option>
-                            </select>
-            Kecepatan Awal <input type="number" name="v0_p" placeholder="1.00" step="0.01" min="0">
-            Sudut Awal <input type="number" name="sudut0_p" placeholder="1.00" step="0.01" min="0">
+              <div class="row">
+              <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
+                <form action="gerpeluru.php" method="POST">
+                  <h3>Gerak Peluru</h3>  
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">Yang Ditanya</label>
+                      <select class="custom-select" id="inputGroupSelect09" name = "soals">
+                        <option selected>Pilih</option>
+                        <option value = "1">Jarak Maksimum (X Maks)</option>
+                        <option value = "2">Tinggi Maksimum (Y Maks)</option>
+                        <option value = "3">Waktu pada titik tertinggi (T ketika Y Maks)</option>
+                        <option value = "4">Waktu pada titik terjauh (T ketika X Maks)</option>
+                      </select>
+                    </div>
+                  </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1" >Kecepatan Awal</span>
+                  <input type="number" name="v0_p" class="form-control"  placeholder="1.00" step="0.01" min="0" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1" >Sudut Awal</span>
+                  <input type="number" name="sudut0_p" class="form-control" placeholder="1.00" step="0.01" min="0" aria-describedby="basic-addon1">
+                </div>
+              </div>
             <input type="submit">
             </form>
-
-            <p>
-            Gerak Peluru Horizontal
-            </p>    
-            <form action="gerpeluru.php" method="POST">
+            </div>
+            
+            <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
+              <form action="gerpeluru.php" method="POST">
+                <h3>Gerak Peluru Horizontal</h3> 
+            </div>
             Yang Ditanya  <select name = "soals1">
                             <option value = "1">Jarak Maksimum (X Maks)</option>
                             <option value = "2">Waktu pada titik terjauh (T ketika X Maks)</option>
@@ -76,40 +93,41 @@
             <input type="submit">
             </form>
             </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-      <div class="modal-content" >
-        <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" >Bantuan</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-        <div class="modal-body">
-        Berikut adalah rumus untuk fisika :<br>
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Tutup</button>
-        </div>
-      </div>
-      </div>
-    </div>
-    
-    <!-- footer -->
-    <footer>
-    <div class="container padding">
-        <div class="row text-center">
-            <div class="col-12">
-          <p> &copy; Kelompok 4 RBPL-D </p>
-              <hr class="light">
-              <p> Fawwaz | Yosua | Eva | Radya | Hezki </p>
-              <hr class="light">
-              <p> Made with love </p>
             </div>
-        </div>
-    </div>
-    </footer>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+              <div class="modal-content" >
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" >Bantuan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                Berikut adalah rumus untuk fisika :<br>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Tutup</button>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- footer -->
+            <footer>
+              <div class="container padding">
+                  <div class="row text-center">
+                      <div class="col-12">
+                    <p> &copy; Kelompok 4 RBPL-D </p>
+                        <hr class="light">
+                        <p> Fawwaz | Yosua | Eva | Radya | Hezki </p>
+                        <hr class="light">
+                        <p> Made with love </p>
+                      </div>
+                  </div>
+            
+            </div>
+            </footer>
     </body>
     </html>
