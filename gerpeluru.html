@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <p>
+            Gerak Peluru
+          </p>    
+          <form action="gerpeluru.php" method="POST">
+            Yang Ditanya  <select name = "soals">
+                              <option value = "1">Jarak Maksimum (X Maks)</option>
+                              <option value = "2">Tinggi Maksimum (Y Maks)</option>
+                              <option value = "3">Waktu pada titik tertinggi (T ketika Y Maks)</option>
+                              <option value = "4">Waktu pada titik terjauh (T ketika X Maks)</option>
+                            </select>
+            Kecepatan Awal <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0">
+            Sudut Awal <input type="number" name="jarak_benda_k" placeholder="1.00" step="0.01" min="0">
+            <input type="submit">
+          </form>
+
+          <p>
+            Gerak Peluru Horizontal
+          </p>    
+          <form action="gerpeluru.php" method="POST">
+            Yang Ditanya  <select name = "soals1">
+                            <option value = "1">Jarak Maksimum (X Maks)</option>
+                            <option value = "2">Waktu pada titik terjauh (T ketika X Maks)</option>
+                            <option value = "3">Sudut pendaratan</option>
+                            </select>
+            Kecepatan Awal <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0">
+            Tinggi Awal <input type="number" name="jarak_bayangan_b" placeholder="1.00" step="0.01" min="0">
+            <input type="submit">
+          </form>
+
+    </body>
+</html>
