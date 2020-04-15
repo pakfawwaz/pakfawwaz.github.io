@@ -50,13 +50,13 @@
   <div class="container col-md-10">
   <div class="row">
   <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
-    <form action="fismod.php" method="POST"></form>
+    <form action="fismod.php" method="POST">
     <h3>Energi Foton</h3>  
     <div class="input-group mb-3">
       <div class="input-group-prepend"> 
-      <label class="input-group-text" for="inputGroupSelect01">Yang Diketahui</label>
+      <label class="input-group-text" for="inputGroupSelect02">Yang Diketahui</label>
       </div> 
-      <select class="custom-select" id="inputGroupSelect01" name = "soal">
+      <select class="custom-select" id="inputGroupSelect02" name = "soal">
       <option selected>Pilih</option>
       <option value = "1">frekuensi</option>
       <option value = "2">lamda</option>
@@ -66,17 +66,16 @@
     <div class="input-group mb-3">
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1" >Frekuensi</span>
-      <input type="number" name="frekuensi" placeholder="1.00" step="0.01" min="0">
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
       </div>
     </div>
     
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1" >Lamda</span>
-        <input type="number" name="lamda" placeholder="1.00" step="0.01" min="0">
+        <input type="number" name="lamda" class="form-control" placeholder="1.00" step="0.01" min="0">
       </div>
     </div>
-    
     <input type="submit">
     </form>
   </div>
