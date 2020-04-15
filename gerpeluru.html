@@ -81,20 +81,40 @@
             
             <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
               <form action="gerpeluru.php" method="POST">
-                <h3>Gerak Peluru Horizontal</h3> 
-            </div>
-            Yang Ditanya  <select name = "soals1">
-                            <option value = "1">Jarak Maksimum (X Maks)</option>
-                            <option value = "2">Waktu pada titik terjauh (T ketika X Maks)</option>
-                            <option value = "3">Sudut pendaratan</option>
-                            </select>
-            Kecepatan Awal <input type="number" name="v0_h" placeholder="1.00" step="0.01" min="0">
-            Tinggi Awal <input type="number" name="h0_h" placeholder="1.00" step="0.01" min="0">
-            <input type="submit">
-            </form>
-            </div>
-            </div>
+                <h3>Gerak Peluru Horizontal</h3>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">Yang Ditanya</label>
+                      <select class="custom-select" id="inputGroupSelect09" name = "soals1">
+                      <option selected>Pilih</option>
+                      <option value = "1">Jarak Maksimum (X Maks)</option>
+                      <option value = "2">Waktu pada titik terjauh (T ketika X Maks)</option>
+                      <option value = "3">Sudut pendaratan</option>
+                      </select>
+                    </div>
+                  </div>
 
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1" >Kecepatan Awal</span>
+                      <input type="number" name="v0_h" placeholder="1.00" step="0.01" min="0">
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1" >Tinggi Awal</span>
+                      <input type="number" name="h0_h" placeholder="1.00" step="0.01" min="0">
+                    </div>
+                  </div>
+                <input type="submit">
+              </form>
+            </div>
+            
+            </div>
+            </div>
+            
+                            
             <!-- Modal -->
             <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
               <div class="modal-dialog" role="document">
