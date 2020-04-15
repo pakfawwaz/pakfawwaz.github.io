@@ -48,9 +48,9 @@
       <h1 class="display-4" style="text-align: center;">Kalkulator Lensa</h1>
         <div class="container-fluid padding">
           <div class="row padding">
-              <div class="col-md-12 col-lg-6">
           <form action="lensa.php" method="POST">
             <h3> Lensa cekung </h3>
+            <div class="col-md-12 col-lg-6">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <label class="input-group-text" for="inputGroupSelect01">Yang Ditanya</label>
@@ -64,34 +64,43 @@
                 <option value="5">Perbesaran</option>
               </select>
             </div>
+          </div>
 
+          <div class="col-md-12 col-lg-6">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1" >Fokus</span>
               <input type="number" name="fokus_k" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
               </div>
             </div>
-
+          </div>
+          
+          <div class="col-md-12 col-lg-6">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1" >Jarak benda</span>
               <input type="number" name="jarak_benda_k" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
               </div>
             </div>
+          </div>
 
+          <div class="col-md-12 col-lg-6">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1" >Jarak bayangan</span>
               <input type="number" name="jarak_bayangan_k" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
               </div>
             </div>
+          </div>
 
+          <div class="col-md-12 col-lg-6">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1" >Jari-jari lensa</span>
               <input type="number" name="jari_lensa_k" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
               </div>
-            </div> 
+            </div>
+          </div> 
             
             <input type="submit"> 
             <!-- fokus <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0"> -->
@@ -102,7 +111,6 @@
             <!-- jari-jari lensa <input type="number" name="jari_lensa_k" placeholder="1.00" step="0.01" min="0"> -->
            
           </form>
-          </div>
         </div>
         </div>
 
