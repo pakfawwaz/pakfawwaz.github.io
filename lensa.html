@@ -53,14 +53,19 @@
               <div class="col-md-12 col-lg-6">
           <form action="lensa.php" method="POST">
             <h3> Lensa cekung </h3>
-            <h6>Yang Ditanya</h6>  
-            <select class="selectpicker" data-style="btn-info" name = "soale" >
-                              <option value = "1">Jarak titik fokus</option>
-                              <option value = "2">Jarak Benda</option>
-                              <option value = "3">Jarak Bayangan</option>
-                              <option value = "4">Jari-jari Lensa</option>
-                              <option value = "5">Perbesaran</option>
-            </select>  
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Yang Ditanya</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01" name="soale">
+                <option selected>Pilih</option>
+                <option value="1">Jarak titik fokus</option>
+                <option value="2">Jarak benda</option>
+                <option value="3">Jarak bayangan</option>
+                <option value="4">Jari-jari lensa</option>
+                <option value="5">Perbesaran</option>
+              </select>
+            </div> 
             <br>
             fokus <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0">
             <br>
