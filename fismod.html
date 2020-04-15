@@ -185,22 +185,45 @@
     Relativitas Massa
   </h3> 
   <form action="fismod.php" method="POST">
-    Yang Ditanya  <select name = "soal4">
-                    <option value = "1">Massa Relatif</option>
-                    <option value = "2">Massa Di Bumi</option>
-    </select>
-    <br>
-    Massa di Bumi <input type="number" name="m_bumi" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Massa Relatif <input type="number" name="m_relatif" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Kecepatan <input type="number" name="m_kec" placeholder="1.00" step="0.01" min="0"> C
-    <br>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend"> 
+      <label class="input-group-text" for="inputGroupSelect02">Yang Ditanya</label>
+      </div> 
+      <select class="custom-select" id="inputGroupSelect02" name = "soal">
+      <option selected>Pilih</option>
+      <option value = "1">Massa Relatif</option>
+      <option value = "2">Massa di Bumi</option>
+      </select>
+    </div>  
+
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Massa di Bumi</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Massa Relatif</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Kecepatan</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">C
+      </div>
+    </div>
     <input type="submit">
   </form>
   </div>
 </div>
 </div>
+
+
   <div class="container col-md-10 col-sm-1" style="padding-top: 20px;">
   <h3>
     Energi Kinetik Relativitas
