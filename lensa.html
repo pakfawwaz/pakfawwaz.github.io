@@ -1,24 +1,187 @@
 <html>
-    <body>
-        <p>
-            Lensa cekung
-          </p>    
-          <form action="lensa.php" method="POST">
-            Yang Ditanya  <select name = "soale">
-                              <option value = "1">Jarak titik fokus</option>
-                              <option value = "2">Jarak Benda</option>
-                              <option value = "3">Jarak Bayangan</option>
-                              <option value = "4">Jari-jari Lensa</option>
-                              <option value = "5">Perbesaran</option>
-                            </select>
-            fokus <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0">
-            jarak benda <input type="number" name="jarak_benda_k" placeholder="1.00" step="0.01" min="0">
-            jarak bayangan <input type="number" name="jarak_bayangan_k" placeholder="1.00" step="0.01" min="0">
-            jari-jari lensa <input type="number" name="jari_lensa_k" placeholder="1.00" step="0.01" min="0">
-            <input type="submit">
-          </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homepage</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/0df0ae2328.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-          <p>
+    <body>
+      <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+          <!--<a class="navbar-brand" href="#"> <img src="#"></a>-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
+              <span class="navbar-toggler-icon"></span> 
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="fisika.html"> Fisika </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="kimia.html"> Kimia </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="matematika.html"> Matematika </a>
+                  </li>
+              <!-- <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#exampleModalLong"> Bantuan </a>
+                  </li>
+                  -->
+              </ul> 
+          </div>
+      </div>
+      </nav>
+      <h1 class="display-4" style="text-align: center;">Kalkulator Lensa</h1>
+      <div class="container col-md-10">
+        <div class="row">
+        <div class="col-md-6 col-sm-6";style="padding-top: 20px;">
+          <form action="lensa.php" method="POST">
+            <h3> Lensa cekung </h3>
+            <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Yang Ditanya</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01" name="soale">
+                <option selected>Pilih</option>
+                <option value="1">Jarak titik fokus</option>
+                <option value="2">Jarak benda</option>
+                <option value="3">Jarak bayangan</option>
+                <option value="4">Jari-jari lensa</option>
+                <option value="5">Perbesaran</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" >Fokus</span>
+              <input type="number" name="fokus_k" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" >Jarak benda</span>
+              <input type="number" name="jarak_benda_k" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" >Jarak bayangan</span>
+              <input type="number" name="jarak_bayangan_k" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" >Jari-jari lensa</span>
+              <input type="number" name="jari_lensa_k" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <input type="submit"> 
+          </div> 
+            
+            
+            <!-- fokus <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0"> -->
+            <!-- <br>
+            jarak benda <input type="number" name="jarak_benda_k" placeholder="1.00" step="0.01" min="0"> -->
+            <!-- <br>
+            jarak bayangan <input type="number" name="jarak_bayangan_k" placeholder="1.00" step="0.01" min="0"> -->
+            <!-- jari-jari lensa <input type="number" name="jari_lensa_k" placeholder="1.00" step="0.01" min="0"> -->
+           
+          </form>
+        </div>
+        
+
+        <div class="col-md-6 col-sm-6" style="padding-top: 20px;";>
+          <h3> Lensa cembung </h3>
+            <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Yang Ditanya</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01" name="soale">
+                <option selected>Pilih</option>
+                <option value="1">Jarak titik fokus</option>
+                <option value="2">Jarak benda</option>
+                <option value="3">Jarak bayangan</option>
+                <option value="4">Jari-jari lensa</option>
+                <option value="5">Perbesaran</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" >Fokus</span>
+              <input type="number" name="fokus_b" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" >Jarak benda</span>
+              <input type="number" name="jarak_benda_b" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" >Jarak bayangan</span>
+              <input type="number" name="jarak_bayangan_b" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" >Jari-jari lensa</span>
+              <input type="number" name="jari_lensa_b" class="form-control" placeholder="1.00" step="0.01" min="0" aria-label="1.00" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <input type="submit"> 
+          </div> 
+            
+            
+            <!-- fokus <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0"> -->
+            <!-- <br>
+            jarak benda <input type="number" name="jarak_benda_k" placeholder="1.00" step="0.01" min="0"> -->
+            <!-- <br>
+            jarak bayangan <input type="number" name="jarak_bayangan_k" placeholder="1.00" step="0.01" min="0"> -->
+            <!-- jari-jari lensa <input type="number" name="jari_lensa_k" placeholder="1.00" step="0.01" min="0"> -->
+           
+          </form>
+        </div>
+          <!-- <p>
             Lensa cembung
           </p>    
           <form action="lensa.php" method="POST">
@@ -34,6 +197,24 @@
             jarak bayangan <input type="number" name="jarak_bayangan_b" placeholder="1.00" step="0.01" min="0">
             jari-jari lensa <input type="number" name="jari_lensa_b" placeholder="1.00" step="0.01" min="0">
             <input type="submit">
-          </form>
+          </form>  -->
+        </div>
+      </div>
+      </div> 
+
+<!--footer-->
+          <footer>
+            <div class="container padding">
+                <div class="row text-center">
+                    <div class="col-12">
+                  <p> &copy; Kelompok 4 RBPL-D </p>
+                      <hr class="light">
+                      <p> Fawwaz | Yosua | Eva | Radya | Hezki </p>
+                      <hr class="light">
+                      <p> Made with love </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
