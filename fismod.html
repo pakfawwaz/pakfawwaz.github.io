@@ -50,20 +50,34 @@
   <div class="container col-md-10">
   <div class="row">
   <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
-    <h3>
-      Energi Foton
-    </h3>    
     <form action="fismod.php" method="POST">
-      Yang Diketahui  <select name = "soal">
-                        <option value = "1">frekuensi</option>
-                        <option value = "2">lamda</option>
-                      </select>
-                      <br>
-      frekuensi <input type="number" name="frekuensi" placeholder="1.00" step="0.01" min="0">
-      <br>
-      lamda <input type="number" name="lamda" placeholder="1.00" step="0.01" min="0">
-      <br>
-      <input type="submit">
+    <h3>Energi Foton</h3>  
+    <div class="input-group mb-3">
+      <div class="input-group-prepend"> 
+      <label class="input-group-text" for="inputGroupSelect02">Yang Diketahui</label>
+      </div> 
+      <select class="custom-select" id="inputGroupSelect02" name = "soal">
+      <option selected>Pilih</option>
+      <option value = "1">Frekuensi</option>
+      <option value = "2">Lamda</option>
+      </select>
+    </div>  
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Frekuensi</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+    
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1" >Lamda</span>
+        <input type="number" name="lamda" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+    
+    <input type="submit">
     </form>
   </div>
   
@@ -81,78 +95,163 @@
   <div class="col-md-6 col-sm-6" style="padding-top: 20px;";>
   <h3>
     Relativitas Panjang
-  </h3> 
+  </h3>
   <form action="fismod.php" method="POST">
-    Yang Ditanya <select name = "soal2">
-      <option value = "1">Panjang Relatif</option>
-      <option value = "2">Panjang Bumi</option>
-      <br>
-    Panjang di Bumi <input type="number" name="p_bumi" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Panjang Relatif <input type="number" name="p_relatif" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Kecepatan <input type="number" name="p_kec" placeholder="1.00" step="0.01" min="0"> C
-    <br>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend"> 
+    <label class="input-group-text" for="inputGroupSelect02">Yang Ditanya</label>
+    </div> 
+    <select class="custom-select" id="inputGroupSelect02" name = "soal">
+    <option selected>Pilih</option>
+    <option value = "1">Panjang Relatif</option>
+    <option value = "2">Panjang di Bumi</option>
+    </select>
+  </div>  
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1" >Panjang di Bumi</span>
+    <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+    </div>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1" >Panjang Relatif</span>
+    <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+    </div>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1" >Kecepatan [C]</span>
+    <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+    </div>
+  </div>
+
     <input type="submit">
   </form>
   </div>
 </div>
 </div>
+
+
+
 <div class="container col-md-10">
 <div class="row">
   <div class="container col-md-6 col-sm-6" style="padding-top: 20px;">
   <h3>
     Relativitas Waktu
-  </h3> 
+  </h3>
   <form action="fismod.php" method="POST">
-    Yang Ditanya <select name = "soal3">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend"> 
+      <label class="input-group-text" for="inputGroupSelect02">Yang Ditanya</label>
+      </div> 
+      <select class="custom-select" id="inputGroupSelect02" name = "soal">
+      <option selected>Pilih</option>
       <option value = "1">Waktu Relatif</option>
-      <option value = "2">Waktu Bumi</option>
-      <br>
-    Waktu di Bumi <input type="number" name="w_bumi" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Waktu Relatif <input type="number" name="w_relatif" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Kecepatan <input type="number" name="w_kec" placeholder="1.00" step="0.01" min="0"> C
-    <br>
+      <option value = "2">Waktu di Bumi</option>
+      </select>
+    </div>  
+    
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Waktu di Bumi</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Waktu Relatif</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Kecepatan [C]</span> 
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0"> 
+      </div>
+    </div>
     <input type="submit">
   </form>
   </div>
+
+  
   <div class="container col-md-6 col-sm-6"style="padding-top: 20px;">
   <h3>
     Relativitas Massa
   </h3> 
   <form action="fismod.php" method="POST">
-    Yang Ditanya  <select name = "soal4">
-                    <option value = "1">Massa Relatif</option>
-                    <option value = "2">Massa Di Bumi</option>
-    </select>
-    <br>
-    Massa di Bumi <input type="number" name="m_bumi" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Massa Relatif <input type="number" name="m_relatif" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Kecepatan <input type="number" name="m_kec" placeholder="1.00" step="0.01" min="0"> C
-    <br>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend"> 
+      <label class="input-group-text" for="inputGroupSelect02">Yang Ditanya</label>
+      </div> 
+      <select class="custom-select" id="inputGroupSelect02" name = "soal">
+      <option selected>Pilih</option>
+      <option value = "1">Massa Relatif</option>
+      <option value = "2">Massa di Bumi</option>
+      </select>
+    </div>  
+
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Massa di Bumi</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Massa Relatif</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Kecepatan [C]</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
     <input type="submit">
   </form>
   </div>
 </div>
 </div>
-  <div class="container col-md-10 col-sm-1" style="padding-top: 20px;">
+  <div class="container col-md-10 col-sm-6" style="padding-top: 20px;">
   <h3>
     Energi Kinetik Relativitas
   </h3> 
   <form action="fismod.php" method="POST">
-    Yang Ditanya <select name = "soal5">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend"> 
+      <label class="input-group-text" for="inputGroupSelect02">Yang Ditanya</label>
+      </div> 
+      <select class="custom-select col-sm-5" id="inputGroupSelect02" name = "soal">
+      <option selected>Pilih</option>
       <option value = "1">Energi Kinetik</option>
-    Massa di Bumi <input type="number" name="e_m_bumi" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Kecepatan <input type="number" name="e_kec" placeholder="1.00" step="0.01" min="0"> C
-    <br>
-    <input type="submit">
+      </select>
+    </div>  
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Massa di Bumi</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" >Kecepatan</span>
+      <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+      </div>
+    </div>
+    <input type="submit"> 
   </form>
-  </div>
   <!-- Modal -->
       <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -164,17 +263,15 @@
           </button>
           </div>
           <div class="modal-body">
-          Berikut adalah bantuan untuk fisika : </br>
-          Berikut adalah bantuan untuk kimia : </br>
-          Berikut adalah bantuan untuk matematika :
+          Berikut adalah rumus untuk fisika :<br><img src="https://imgur.com/9VsJ8z3.png" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
           </div>
           <div class="modal-footer">
           <button type="button" class="btn btn-success" data-dismiss="modal">Tutup</button>
-      
           </div>
         </div>
         </div>
       </div>
+      
   <!-- footer -->
   <footer>
     <div class="container padding">

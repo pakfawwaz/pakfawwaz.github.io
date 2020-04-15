@@ -1,57 +1,153 @@
 <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Kalkulator Gerak Peluru</title>
+      <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://use.fontawesome.com/0df0ae2328.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link href="style.css" rel="stylesheet"/>
+    </head>
     <body>
-        <p>
-            Gerak Peluru dengan H0 = 0
-          </p>    
-          <form action="gerpeluru.php" method="POST">
-            Yang Ditanya  <select name = "soale">
-                              <option value = "1">Jarak titik fokus</option>
-                              <option value = "2">Jarak Benda</option>
-                              <option value = "3">Jarak Bayangan</option>
-                              <option value = "4">Jari-jari Lensa</option>
-                              <option value = "5">Perbesaran</option>
-                            </select>
-            fokus <input type="number" name="fokus_k" placeholder="1.00" step="0.01" min="0">
-            jarak benda <input type="number" name="jarak_benda_k" placeholder="1.00" step="0.01" min="0">
-            jarak bayangan <input type="number" name="jarak_bayangan_k" placeholder="1.00" step="0.01" min="0">
-            jari-jari lensa <input type="number" name="jari_lensa_k" placeholder="1.00" step="0.01" min="0">
+            <!--navbar-->
+            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fisika.html"> Fisika </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kimia.html"> Kimia </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matematika.html"> Matematika </a>
+                        </li>
+                        <li class="button">
+                          <a type="button" class="btn btn-info text-light" data-toggle="modal" data-target="#exampleModalLong">Bantuan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+            <!-- judul -->
+            <h1 class="display-4" style="text-align: center;">Kalkulator Gerak Peluru</h1>
+            <!-- Kalkulator -->
+            <div class="container col-md-10">
+              <div class="row">
+              <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
+                <form action="gerpeluru.php" method="POST">
+                  <h3>Gerak Peluru</h3>  
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">Yang Ditanya</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect09" name = "soals">
+                      <option selected>Pilih</option>
+                      <option value = "1">Jarak Maksimum (X Maks)</option>
+                      <option value = "2">Tinggi Maksimum (Y Maks)</option>
+                      <option value = "3">Waktu pada titik tertinggi (T ketika Y Maks)</option>
+                      <option value = "4">Waktu pada titik terjauh (T ketika X Maks)</option>
+                    </select>
+                  </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1" >Kecepatan Awal</span>
+                  <input type="number" name="v0_p" class="form-control"  placeholder="1.00" step="0.01" min="0" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1" >Sudut Awal</span>
+                  <input type="number" name="sudut0_p" class="form-control" placeholder="1.00" step="0.01" min="0" aria-describedby="basic-addon1">
+                </div>
+              </div>
             <input type="submit">
-          </form>
+            </form>
+            </div>
+            
+            <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
+              <form action="gerpeluru.php" method="POST">
+                <h3>Gerak Peluru Horizontal</h3>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">Yang Ditanya</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect09" name = "soals1">
+                    <option selected>Pilih</option>
+                    <option value = "1">Jarak Maksimum (X Maks)</option>
+                    <option value = "2">Waktu pada titik terjauh (T ketika X Maks)</option>
+                    <option value = "3">Sudut pendaratan</option>
+                    </select>
+                  </div>
 
-          <p>
-            Gerak Peluru dengan H0 != 0
-          </p>    
-          <form action="gerpeluru.php" method="POST">
-            Yang Ditanya  <select name = "soale1">
-                              <option value = "1">Jarak titik fokus</option>
-                              <option value = "2">Jarak Benda</option>
-                              <option value = "3">Jarak Bayangan</option>
-                              <option value = "4">Jari-jari Lensa</option>
-                              <option value = "5">Perbesaran</option>
-                            </select>
-            fokus <input type="number" name="fokus_b" placeholder="1.00" step="0.01" min="0">
-            jarak benda <input type="number" name="jarak_benda_b" placeholder="1.00" step="0.01" min="0">
-            jarak bayangan <input type="number" name="jarak_bayangan_b" placeholder="1.00" step="0.01" min="0">
-            jari-jari lensa <input type="number" name="jari_lensa_b" placeholder="1.00" step="0.01" min="0">
-            <input type="submit">
-          </form>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1" >Kecepatan Awal</span>
+                      <input type="number" name="v0_h" class="form-control" placeholder="1.00" step="0.01" min="0" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
 
-          <p>
-            Gerak Peluru Setengah 
-          </p>    
-          <form action="gerpeluru.php" method="POST">
-            Yang Ditanya  <select name = "soale1">
-                              <option value = "1">Jarak titik fokus</option>
-                              <option value = "2">Jarak Benda</option>
-                              <option value = "3">Jarak Bayangan</option>
-                              <option value = "4">Jari-jari Lensa</option>
-                              <option value = "5">Perbesaran</option>
-                            </select>
-            fokus <input type="number" name="fokus_b" placeholder="1.00" step="0.01" min="0">
-            jarak benda <input type="number" name="jarak_benda_b" placeholder="1.00" step="0.01" min="0">
-            jarak bayangan <input type="number" name="jarak_bayangan_b" placeholder="1.00" step="0.01" min="0">
-            jari-jari lensa <input type="number" name="jari_lensa_b" placeholder="1.00" step="0.01" min="0">
-            <input type="submit">
-          </form>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1" >Tinggi Awal</span>
+                      <input type="number" name="h0_h" class="form-control" placeholder="1.00" step="0.01" min="0" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                <input type="submit">
+              </form>
+            </div>
+
+            </div>
+            </div>
+            
+                            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+              <div class="modal-content" >
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" >Bantuan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                Berikut adalah rumus untuk fisika :<br>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Tutup</button>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- footer -->
+            <footer>
+              <div class="container padding">
+                  <div class="row text-center">
+                      <div class="col-12">
+                    <p> &copy; Kelompok 4 RBPL-D </p>
+                        <hr class="light">
+                        <p> Fawwaz | Yosua | Eva | Radya | Hezki </p>
+                        <hr class="light">
+                        <p> Made with love </p>
+                      </div>
+                  </div>
+            
+            </div>
+            </footer>
     </body>
-</html>
+    </html>
