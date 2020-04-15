@@ -58,8 +58,8 @@
       </div> 
       <select class="custom-select" id="inputGroupSelect02" name = "soal">
       <option selected>Pilih</option>
-      <option value = "1">frekuensi</option>
-      <option value = "2">lamda</option>
+      <option value = "1">Frekuensi</option>
+      <option value = "2">Lamda</option>
       </select>
     </div>  
 
@@ -95,23 +95,48 @@
   <div class="col-md-6 col-sm-6" style="padding-top: 20px;";>
   <h3>
     Relativitas Panjang
-  </h3> 
+  </h3>
   <form action="fismod.php" method="POST">
-    Yang Ditanya <select name = "soal2">
-      <option value = "1">Panjang Relatif</option>
-      <option value = "2">Panjang Bumi</option>
-      <br>
-    Panjang di Bumi <input type="number" name="p_bumi" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Panjang Relatif <input type="number" name="p_relatif" placeholder="1.00" step="0.01" min="0">
-    <br>
-    Kecepatan <input type="number" name="p_kec" placeholder="1.00" step="0.01" min="0"> C
-    <br>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend"> 
+    <label class="input-group-text" for="inputGroupSelect02">Yang Ditanya</label>
+    </div> 
+    <select class="custom-select" id="inputGroupSelect02" name = "soal">
+    <option selected>Pilih</option>
+    <option value = "1">Panjang Relatif</option>
+    <option value = "2">Panjang di Bumi</option>
+    </select>
+  </div>  
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1" >Panjang di Bumi</span>
+    <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+    </div>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1" >Panjang Relatif</span>
+    <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+    </div>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1" >Kecepatan</span>
+    <input type="number" name="frekuensi" class="form-control" placeholder="1.00" step="0.01" min="0">
+    </div>
+  </div>
+
     <input type="submit">
   </form>
   </div>
 </div>
 </div>
+
+
+
 <div class="container col-md-10">
 <div class="row">
   <div class="container col-md-6 col-sm-6" style="padding-top: 20px;">
