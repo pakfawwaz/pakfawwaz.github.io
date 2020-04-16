@@ -131,7 +131,36 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
     </head>
     <body>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:700" rel="stylesheet">
-
+<!--navbar-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <!--<a class="navbar-brand" href="#"> <img src="#"></a>-->
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarResponsive"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html"> Home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="fisika.html"> Fisika </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="kimia.html"> Konversi </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="matematika.html"> Matematika </a>
+    </li>
+  </div>
+  </div>
+  </nav>  
+  
 <div class="converter-wrapper center-block">
   <h1 class="display-4" style="text-align: center;">Energy Unit Converter</h1>
 
@@ -162,7 +191,7 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
 
   <div class="converter-side-b">
     <form name="form_B" onSubmit="return false">
-      <div class="input-group mb-3 " ></div>
+      <div class="input-group mb-3 " >
       <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
       <span>
         <select class="custom-select" id="inputGroupSelect01" name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
