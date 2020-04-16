@@ -168,8 +168,8 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
   <!-- class="select-property" -->
   <div class="converter-side-a">
     <form name="form_A" onSubmit="return false">
-      <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
       <div class="input-group mb-3" >
+      <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
       <span>
         <select class="custom-select" id="inputGroupSelect01" name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
         </select>
@@ -184,8 +184,8 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
 
   <div class="converter-side-b">
     <form name="form_B" onSubmit="return false">
-      <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
       <div class="input-group mb-3" >
+      <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
       <span>
         <select class="custom-select" id="inputGroupSelect01" name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
         </select>
