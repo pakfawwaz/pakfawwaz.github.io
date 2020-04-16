@@ -45,3 +45,9 @@ a.wrimagecard:hover,
   outline: none;
   box-shadow: none;
 }
+
+.center-block {
+  display: table;  /* Instead of display:block */
+  margin-left: auto;
+  margin-right: auto;
+}
