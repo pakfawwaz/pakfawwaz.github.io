@@ -153,11 +153,11 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
   </div>
   </div>
   </nav>  
- 
 <div class="converter-wrapper center-block">
   <h1 class="display-4" style="text-align: center;">Konversi Molar</h1>
 <br>  
- <form name="property_form">
+<div class="center-block">
+<form name="property_form">
     <div class="input-group mb-3 "> 
     <span>
       <select class="custom-select" id="inputGroupSelect01" name="the_menu" size=1 onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
@@ -179,7 +179,6 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
     </form>
   </div> <!-- /converter-side-a -->
 
- 
 
 <div class="converter-equals center-block"> 
   <h5>=</h5>
@@ -198,6 +197,7 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
     </div>
     </form>
   </div> <!-- /converter-side-b -->
+</div>
 </div><!-- /converter-wrapper -->  
 
 <!--Footer-->
