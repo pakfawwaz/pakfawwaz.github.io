@@ -1,36 +1,70 @@
 <?php
 class lensa_cekung{
     function fokus($jarak_bayangan_k,$jarak_benda_k){
+        $kuda = $jarak_bayangan_k+$jarak_benda_k;
+        $keledai = $jarak_bayangan_k*$jarak_benda_k;
+        $hasile = $kuda/$keledai;
+        echo($hasile);
 
     }
     function jarak_benda_k($fokus_k,$jarak_bayangan_k){
-
+        $keledai = $jarak_bayangan_k*$fokus_k;
+        $ayam = $jarak_bayangan_k-$fokus_k;
+        $hasils = $keledai/$ayam;
+        echo($hasils);
     }
     function jarak_bayangan_k($fokus_k,$jarak_benda_k){
+        $keledai1 = $jarak_benda_k*$fokus_k;
+        $ayam1 = $jarak_benda_k-$fokus_k;
+        $hasils1 = $keledai1/$ayam1;
+        echo($hasils1);
 
     }
     function jari_lensa_k($jarak_bayangan_k,$jarak_benda_k){
-
+        $keledai2 = $jarak_benda_k*$jarak_bayangan_k;
+        $ayam2 = $jarak_benda_k+$jarak_bayangan_k;
+        $hasils2 = 2*$keledai2/$ayam2;
+        echo($hasils2);
     }
     function perbesaran($jarak_bayangan_k,$jarak_benda_k){
+        $perbesaran_k = $jarak_bayangan_k/$jarak_benda_k;
+        echo($perbesaran_k);
 
     }
 
 }
 class lensa_cembung{
     function fokus_b($jarak_bayangan_b,$jarak_benda_b){
+        $kuda = $jarak_bayangan_b+$jarak_benda_b;
+        $keledai = $jarak_bayangan_b*$jarak_benda_b;
+        $hasile = $kuda/$keledai;
+        echo($hasile);
 
     }
     function jarak_benda_b($fokus_b,$jarak_bayangan_b){
+        $keledai = $jarak_bayangan_b*$fokus_b;
+        $ayam = $jarak_bayangan_b-$fokus_b;
+        $hasils = $keledai/$ayam;
+        echo($hasils);
 
     }
     function jarak_bayangan_b($fokus_b,$jarak_benda_b){
+        $keledai1 = $jarak_benda_b*$fokus_b;
+        $ayam1 = $jarak_benda_b-$fokus_b;
+        $hasils1 = $keledai1/$ayam1;
+        echo($hasils1);
 
     }
     function jari_lensa_b($jarak_bayangan_b,$jarak_benda_b){
+        $keledai2 = $jarak_benda_b*$jarak_bayangan_b;
+        $ayam2 = $jarak_benda_b+$jarak_bayangan_b;
+        $hasils2 = 2*$keledai2/$ayam2;
+        echo($hasils2);
 
     }
     function perbesaran_b($jarak_bayangan_b,$jarak_benda_b){
+        $perbesaran_k = $jarak_bayangan_k/$jarak_benda_k;
+        echo($perbesaran_k);
         
     }
 
