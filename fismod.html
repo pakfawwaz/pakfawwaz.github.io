@@ -45,7 +45,10 @@
           </nav>
         <!-- judul -->
         <h1 class="display-4" style="text-align: center;">Kalkulator Fisika Modern</h1>
-        
+        <!-- Container  -->
+        <div class="container col-md-10">
+        <!-- row -->
+        <div class="row">
         <!-- Kalkulator Foton -->
         <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
           <form action="fismod.php" method="POST">
@@ -78,46 +81,48 @@
           <input type="submit">
           </form>
         </div>
-
-  <p>
-    Relativitas Panjang
-  </p> 
-  <form action="fismod.php" method="POST">
-  <div class="input-group mb-3">
-    <div class="input-group-prepend"> 
-    <label class="input-group-text" for="inputGroupSelect02">Yang Ditanya</label>
-    </div> 
-    <select class="custom-select" id="inputGroupSelect02" name = "soal2">
-    <option selected>Pilih</option>
-    <option value = "1">Panjang Relatif</option>
-    <option value = "2">Panjang di Bumi</option>
-    </select>
-  </div>  
-  
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1" >Panjang di Bumi</span>
-    <input type="number" name="p_bumi" class="form-control" placeholder="1.00" step="0.01" min="0">
-    </div>
-  </div>
-
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1" >Panjang Relatif</span>
-    <input type="number" name="p_relatif" class="form-control" placeholder="1.00" step="0.01" min="0">
-    </div>
-  </div>
-
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1" >Kecepatan [C]</span>
-    <input type="number" name="p_kec" class="form-control" placeholder="1.00" step="0.01" min="0">
-    </div>
-  </div>
-
-    <input type="submit">
-  </form>
-  <p>
+        <!-- Kalkulator Relativitas Panjang -->
+        <div class="col-md-6 col-sm-6" style="padding-top: 20px;">
+          <H3>Relativitas Panjang</H3> 
+          <form action="fismod.php" method="POST">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend"> 
+            <label class="input-group-text" for="inputGroupSelect02">Yang Ditanya</label>
+            </div> 
+            <select class="custom-select" id="inputGroupSelect02" name = "soal2">
+            <option selected>Pilih</option>
+            <option value = "1">Panjang Relatif</option>
+            <option value = "2">Panjang di Bumi</option>
+            </select>
+          </div>  
+          
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1" >Panjang di Bumi</span>
+            <input type="number" name="p_bumi" class="form-control" placeholder="1.00" step="0.01" min="0">
+            </div>
+          </div>
+        
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1" >Panjang Relatif</span>
+            <input type="number" name="p_relatif" class="form-control" placeholder="1.00" step="0.01" min="0">
+            </div>
+          </div>
+        
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1" >Kecepatan [C]</span>
+            <input type="number" name="p_kec" class="form-control" placeholder="1.00" step="0.01" min="0">
+            </div>
+          </div>
+          
+            <input type="submit">
+          </form>
+          </div>
+          <!-- penutup row -->
+        </div>
+    
     Relativitas Waktu
   <!-- </p> 
   <form action="fismod.php" method="POST">
@@ -182,8 +187,8 @@
     Massa Bumi <input type="number" name="e_m_bumi" placeholder="1.00" step="0.01" min="0">
     Kecepatan <input type="number" name="e_kec" placeholder="1.00" step="0.01" min="0"> C
     <input type="submit">
-  </form>   -->
-     
+  </form>
+</div>
 </body>
 </html>
         
