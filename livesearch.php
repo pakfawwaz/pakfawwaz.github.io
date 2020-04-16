@@ -37,7 +37,7 @@ if (strlen($q)>0) {
 if ($hint=="") {
   $response="no suggestion";
 } else {
-  $response=$hint;
+  $response=$hint;  
 }
 
 //output the response
