@@ -124,9 +124,35 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
 </Head>
 <body>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:700" rel="stylesheet">
+<!--navbar-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <!--<a class="navbar-brand" href="#"> <img src="#"></a>-->
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarResponsive"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html"> Home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="fisika.html"> Fisika </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="kimia.html"> Konversi </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="matematika.html"> Matematika </a>
+    </li>
 
 <div class="converter-wrapper">
-  <h1>Konversi <br>Kimia dan lain lain</h1>
+  <h1 class="display-4" style="text-align: center;">Konversi Kimia <br> dan lain-lain </h1>
 
   <form name="property_form">
     <span>
@@ -145,7 +171,7 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
     </form>
   </div> <!-- /converter-side-a -->
   
-<div class="converter-equals">
+<div class="converter-equals"> 
   <p>=</p>
 </div> <!-- /converter-side-a -->
 
