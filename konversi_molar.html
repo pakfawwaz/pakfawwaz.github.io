@@ -182,7 +182,7 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
     <form name="form_B" onSubmit="return false">
       <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
       <span>
-        <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+        <select class="custom-select" id="inputGroupSelect01" name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
         </select>
       </span>
     </form>
