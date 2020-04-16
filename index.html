@@ -45,6 +45,7 @@
           xmlhttp.open("GET","livesearch.php?q="+str,true);
           xmlhttp.send();
         }
+
         xmlhttp.onreadystatechange=function() {
             if (this.readyState==4 && this.status==200) {
             document.getElementById("livesearch").innerHTML=this.responseText;
@@ -53,7 +54,6 @@
         }
         xmlhttp.open("GET","livesearch.php?q="+str,true);
         xmlhttp.send();
-        }
         </script>
 </head>
 <body>
@@ -102,11 +102,6 @@
 											<input class="form-control form-control-lg form-control-borderless" type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search topics or keywords">
                                             <div id="livesearch"></div>
                                         </div>
-										<!--end of col-->
-										<div class="col-auto">
-											<button class="btn btn-lg btn-success" type="submit">Search</button>
-										</div>
-										<!--end of col-->
 									</div>
 								</form>
 							</div>
