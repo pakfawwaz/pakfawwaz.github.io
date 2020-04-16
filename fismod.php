@@ -139,9 +139,9 @@ elseif(isset($_POST['soal2'])){
 
     }
     else if ($soal2 == "2"){
-        $p_relatif = $_POST['m_relatif'];
-        $p_bumi = $_POST['m_bumi'];
-        $p_kec = $_POST['m_kec'];
+        $p_relatif = $_POST['p_relatif'];
+        $p_bumi = $_POST['p_bumi'];
+        $p_kec = $_POST['p_kec'];
         echo $hore2 -> panjang_bumi ($p_relatif,$p_kec);
 
     }

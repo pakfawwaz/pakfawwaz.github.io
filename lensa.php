@@ -63,8 +63,8 @@ class lensa_cembung{
 
     }
     function perbesaran_b($jarak_bayangan_b,$jarak_benda_b){
-        $perbesaran_k = $jarak_bayangan_k/$jarak_benda_k;
-        echo($perbesaran_k);
+        $perbesaran_b = $jarak_bayangan_b/$jarak_benda_b;
+        echo($perbesaran_b);
         
     }
 
