@@ -104,7 +104,7 @@ else if (isset($_POST['soale1'])){
     $jarak_bayangan_b =$_POST['jarak_bayangan_b'];
     $jarak_benda_b = $_POST['jarak_benda_b'];
     $jari_lensa_b = $_POST['jari_lensa_b'];
-    $halo1 = new lensa_cekung();
+    $halo1 = new lensa_cembung();
     if ($_POST['soale1'] == 1){
         echo $halo1 -> fokus_b($jarak_bayangan_b,$jarak_benda_b);
 
