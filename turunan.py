@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import request
+import re
 
 if request.method == 'POST':
     ayam = request.form.turunkan

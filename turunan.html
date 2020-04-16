@@ -1,7 +1,7 @@
 <html>
     <body>
-        <form name="search" action="/cgi-bin/turunan.py" method="get">
-            Turunkan Apa?: <input type="text" name="bismillah">
+        <form name="search" action="turunan.py" method="POST">
+            Turunkan Apa?: <input type="text" name = "turunkan" value="{{request.form.turunkan}}">
             <input type="submit" value="Submit">
             </form> 
     </body>
