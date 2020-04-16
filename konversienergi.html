@@ -1,4 +1,17 @@
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalkulator Energi </title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/0df0ae2328.js"></script>
+    <link href="style.css" rel="stylesheet" />
     <script>
 var property = new Array();
 var unit = new Array();
@@ -115,46 +128,87 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
     )) e.preventDefault();
 });
     </script>
+    </head>
     <body>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:700" rel="stylesheet">
+<!--navbar-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <!--<a class="navbar-brand" href="#"> <img src="#"></a>-->
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarResponsive"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html"> Home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="fisika.html"> Fisika </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="kimia.html"> Konversi </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="matematika.html"> Matematika </a>
+    </li>
+  </div>
+  </div>
+  </nav>  
 
-<div class="converter-wrapper">
-  <h1>ENERGY <br>UNIT CONVERTER</h1>
-
+<div class="converter-wrapper center-block">
+  <h1 class="display-4" style="text-align: center;">Energy Unit Converter</h1>
+<br>
   <form name="property_form">
+    <div class="input-group mb-3 "> 
     <span>
-      <select class="select-property" name="the_menu" size=1 onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+      <select class="custom-select" id="inputGroupSelect01" name="the_menu" size=1 onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
       </select>
     </span>
+    </div>
   </form>
 
   <div class="converter-side-a">
     <form name="form_A" onSubmit="return false">
+      <div class="input-group mb-3 " >
       <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
       <span>
-        <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
+        <select class="custom-select" id="inputGroupSelect01" name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
         </select>
       </span>
+      </div>
     </form>
   </div> <!-- /converter-side-a -->
   
- <div class="converter-equals">
-   <p>=</p>
+ <div class="converter-equals center-block">
+   <h1>=</h1>
  </div> <!-- /converter-side-a -->
 
   <div class="converter-side-b">
     <form name="form_B" onSubmit="return false">
+      <div class="input-group mb-3 " >
       <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
       <span>
-        <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+        <select class="custom-select" id="inputGroupSelect01" name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
         </select>
       </span>
+      </div>
     </form>
   </div> <!-- /converter-side-b -->
 </div><!-- /converter-wrapper -->
 
 
 <!--Footer-->
+<br>
+<br>
+<br>
+<br> 
+<br>
 <footer>
   <div class="container padding">
   <div class="row text-center">
