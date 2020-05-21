@@ -157,6 +157,15 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
     <li class="nav-item">
       <a class="nav-link" href="matematika.html"> Matematika </a>
     </li>
+    <li>
+      <a
+a type="button" class="btn btn-danger text-light"
+data-toggle="modal"
+data-target="#exampleModalLong"
+>
+Bantuan
+  </a>
+</li>
   </div>
   </div>
   </nav>  
@@ -203,7 +212,29 @@ document.getElementByClass('numbersonly').addEventListener('keydown', function(e
   </div> <!-- /converter-side-b -->
 </div>
 </div><!-- /converter-wrapper -->
-
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">Bantuan</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+      </div>
+      <div class="modal-body">
+      Cara Memakai Kalkulator : <br>
+      1. Click <img src="https://imgur.com/pOT7V3Z.png" alt="Run Button"><br> 
+      2. Masukkan persamaan di kolom tanpa Spasi (Kuadrat dengan memencet Shift + F6)<br>
+      3. Klik Enter<br>
+      <font color="red">Persamaan harus dituliskan Koefisiennya ( X Ditulis 1X)</font>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-primary " data-dismiss="modal">Tutup</button>
+      </div>
+  </div>
+  </div>
+</div>
 
 <!--Footer-->
 <br>
