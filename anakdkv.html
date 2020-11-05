@@ -37,6 +37,7 @@
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: #ffffff;
+    
 }
 
 /* for dropdown only - change the color of droodown */
@@ -50,6 +51,9 @@
 .navbar-custom .dropdown-item:focus {
     color: #333333;
     background-color: rgba(255,255,255,.5);
+}
+.nav-item{
+   margin-right: 100px;
 }
 .container {
   display: inline-block;
@@ -85,6 +89,32 @@
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column2 {
+  float: left;
+  width: 20%;
+  align-items: center;
+  margin: 2%;
+}
+
+/* Clear floats after image containers */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
 }
     </style>
     <nav class="navbar navbar-expand-sm navbar-custom">
@@ -128,9 +158,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#">What's New</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Recipe</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link disabled" href="#">About</a>
             </li>
@@ -152,7 +184,9 @@
                     <p>
                         
                         <div style="background-color:white; margin: 10% 25%; padding: 3% 3%; height:25%;  font-size:18px;">
-                            
+                            <a>
+                              During this pandemic bla-bla-bla
+                            </a>
                         </div>
                   
                     </p>
@@ -161,18 +195,26 @@
             <div style="width: 100%;
             background-color: #caa48d;
             ">
-                
-                <div style="text-align: center;
-                padding: 10px 20px;">
-                    <div class="row">
-                      <div class="column" style=" padding: 3% 18%;">
-                        <img src="http://drive.google.com/uc?export=view&id=1E3j6P4Kehz9sT8lQLhphBtIArAq9dhqV" style="height:200px; width:160px;">
-                        <img src="http://drive.google.com/uc?export=view&id=1BQe_9CYOyJn6HIr8kU8eZZXmcVh8en3E" style="height:200px; width:160px;">
-                        <img src="http://drive.google.com/uc?export=view&id=1ZnynQjDff7eaa7qFvMlTEqJcXzGrSaqL" style="height:200px; width:160px;">
-                        <img src="http://drive.google.com/uc?export=view&id=1nj5xEwwCpuZBQN4iuXmhrP6b435ceDGA" style="height:200px; width:160px;">
-                      </div>
-                    </div>
+            <div style="text-align: center;
+            padding: 10px 20px;">
+            <p>
+              <div class="row2">
+                <div class="column2">
+                  <img src="http://drive.google.com/uc?export=view&id=1E3j6P4Kehz9sT8lQLhphBtIArAq9dhqV" style="height:200px; width:160px;">
                 </div>
+                <div class="column2">
+                  <img src="http://drive.google.com/uc?export=view&id=1BQe_9CYOyJn6HIr8kU8eZZXmcVh8en3E" style="height:200px; width:160px;">
+                </div>
+                <div class="column2">
+                  <img src="http://drive.google.com/uc?export=view&id=1ZnynQjDff7eaa7qFvMlTEqJcXzGrSaqL" style="height:200px; width:160px;">
+                </div>
+                <div class="column2">
+                  <img src="http://drive.google.com/uc?export=view&id=1ZnynQjDff7eaa7qFvMlTEqJcXzGrSaqL" style="height:200px; width:160px;">
+                </div>
+              </div>
+            </p>
+
+            </div>
             </div>
             <div style="width: 100%;
             background-color: #f7e8d6;
@@ -181,18 +223,18 @@
                 <div style="text-align: center;
                 padding: 10px 20px;">
                     <p>
-                        
+                      
                         <div style="background-color:#caa48d; margin: 10% 10%; padding: 3% 3%; height:45%;  font-size:18px;">
-                          <div style="text-align: center;
-                          padding: 10px 20px;">
-                              <div class="row">
-                                <div class="column" style=" padding: 3% 18%;">
-                                  <img src="http://drive.google.com/uc?export=view&id=1E3j6P4Kehz9sT8lQLhphBtIArAq9dhqV" style="height:200px; width:160px;">
-                                  <img src="http://drive.google.com/uc?export=view&id=1BQe_9CYOyJn6HIr8kU8eZZXmcVh8en3E" style="height:200px; width:160px;">
-                                  <img src="http://drive.google.com/uc?export=view&id=1ZnynQjDff7eaa7qFvMlTEqJcXzGrSaqL" style="height:200px; width:160px;">
-                                  
-                                </div>
-                              </div>
+                          <div class="row">
+                            <div class="column">
+                              <img src="http://drive.google.com/uc?export=view&id=1E3j6P4Kehz9sT8lQLhphBtIArAq9dhqV" style="height:200px; width:200px;">
+                            </div>
+                            <div class="column">
+                              <img src="http://drive.google.com/uc?export=view&id=1BQe_9CYOyJn6HIr8kU8eZZXmcVh8en3E" style="height:200px; width:200px;">
+                            </div>
+                            <div class="column">
+                              <img src="http://drive.google.com/uc?export=view&id=1ZnynQjDff7eaa7qFvMlTEqJcXzGrSaqL" style="height:200px; width:200px;">
+                            </div>
                           </div>
                         </div>
                         <h3>
