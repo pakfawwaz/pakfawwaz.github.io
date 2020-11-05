@@ -116,9 +116,63 @@
   clear: both;
   display: table;
 }
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@font-face {
+  font-family: BebasNeuebaru;
+  src: url(http://drive.google.com/uc?export=view&id=18H27ykswAM5mcoZYgGvGbX3CW9j2cfaZ);
+}
+@font-face {
+  font-family: Logo;
+  src: url(http://drive.google.com/uc?export=view&id=1ej7k47ZoSqa3wJ_g6uVv_YXxyTWf48Qg);
+}
     </style>
+    
+    <div class="bottom-right">
+      <h1 style="color: #333;" align="center">
+        WHAT'S NEW?
+      </h1>
+      <div style="background-color: #333333; margin-left: 2px ;margin: 2px;">
+        <h3 align="center">
+          GRILLED SALMON
+        </h3>
+      </div>
+    </div>
+    
     <nav class="navbar navbar-expand-sm navbar-custom">
-        <a href="/" class="navbar-brand">Messy Kitchen</a>
+        <a href="/" class="navbar-brand" style="font-family: Logo;">Messy Kitchen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
             <i class="fa fa-bars fa-lg py-1 text-white"></i>
         </button>
@@ -170,8 +224,11 @@
         </div>
       </nav>
 </head>
-<div>
 
+
+
+<div>
+  
 </div>
 </div>
 <body>
@@ -260,7 +317,7 @@
                         <h3>
                           Test
                         </h3>
-                        <a>
+                        <a style="font-family: BebasNeuebaru;">
                           aaaaaaaaaaaaaaaaaaaaaa
                         </a>
 
