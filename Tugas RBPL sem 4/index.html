@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homepage</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/0df0ae2328.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    
+    <script>
+        function showResult(str) {
+        if (str.length==0) {
+            document.getElementById("livesearch").innerHTML="";
+            document.getElementById("livesearch").style.border="0px";
+            return;
+          }
+          //membuat objek ajax
+          if (window.XMLHttpRequest) {
+        }
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+          } else {  // code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          //cek kesiapan ajax (sumber)
+          xmlhttp.onreadystatechange=function() {
+              // readystate itu 0-4 (kita butuh 4 = sumber ready), status 200 sumber ok kalo 404 gaada
+            if (this.readyState==4 && this.status==200) {
+                //responseText berisi apapun dari sumber, innerHTML isi dari yg di livesearch = diketikkin user
+              document.getElementById("livesearch").innerHTML=this.responseText;
+              document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+            }
+          }
+          //eksekusi ajax 
+          //request method GET, sumber data dari livesearch.php, true = asinkronous
+          xmlhttp.open("GET","livesearch.php?q="+str,true);
+          xmlhttp.send();
+        }
+
+        xmlhttp.onreadystatechange=function() {
+            if (this.readyState==4 && this.status==200) {
+            document.getElementById("livesearch").innerHTML=this.responseText;
+            document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+            }
+        }
+        xmlhttp.open("GET","livesearch.php?q="+str,true);
+        xmlhttp.send();
+        </script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <!--<a class="navbar-brand" href="#"> <img src="#"></a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="anakdkv.html"> Fisika </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kimia.html"> Konversi </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="matematika.html"> Matematika </a>
+                </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModalLong"> Bantuan </a>
+                </li>
+                -->
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <h1 class="display-2" style="text-align: center;">Kalkulator Aja</h1>
+    <!--Search-->
+	<div class="container">
+		<br/>
+		<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<form class="card card-sm">
+									<div class="card-body row no-gutters align-items-center">
+										<div class="col-auto">
+											<i class="fa fa-search" aria-hidden="true"></i></i>
+										</div>
+										<!--end of col-->
+										<div class="col">
+											<input class="form-control form-control-lg form-control-borderless" type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search topics or keywords">
+                                            <div id="livesearch"></div>
+                                        </div>
+									</div>
+								</form>
+							</div>
+							<!--end of col-->
+						</div>
+    </div>
+    
+	<!--Icon Mata Pelajaran-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <div class="container-fluid">
+	<hr>
+    <div class="container-fluid col-md-8">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+		<div class="wrimagecard wrimagecard-topimage">
+			<a href="matematika.html">
+			<div class="wrimagecard-topimage_header" style="background-color:rgba(187, 120, 36, 0.1) ">
+				<center><i class="fa fa-cubes" style="color:#BB7824"></i></center>
+			</div>
+			<div class="wrimagecard-topimage_title">
+				<h4>Matematika
+				<div class="pull-right badge">3</div></h4>
+			</div>
+			</a>
+		</div>
+		</div>
+		<div class="col-md-4 col-sm-4">
+		<div class="wrimagecard wrimagecard-topimage">
+			<a href="fisika.html">
+			<div class="wrimagecard-topimage_header" style="background-color: rgba(22, 160, 133, 0.1)">
+				<center><i class = "fa fa-cubes" style="color:#16A085"></i></center>
+			</div>
+			<div class="wrimagecard-topimage_title">
+				<h4>Fisika
+				<div class="pull-right badge">3</div></h4>
+				<div class="pull-right badge" id="WrControls"></div></h4>
+			</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-4">
+		<div class="wrimagecard wrimagecard-topimage">
+			<a href="kimia.html">
+			<div class="wrimagecard-topimage_header" style="background-color:  rgba(213, 15, 37, 0.1)">
+				<center><i class="fa fa-cubes" style="color:#d50f25"> </i></center>
+			</div>
+			<div class="wrimagecard-topimage_title" >
+				<h4>Kalkulator Konversi
+				<div class="pull-right badge">3</div></h4>
+				<div class="pull-right badge" id="WrForms"></div>
+				</h4>
+			</div>
+			</a>
+		</div>
+		</div>
+		</div>
+	</div>
+    <!-- Modal 
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Bantuan</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            Berikut adalah bantuan untuk fisika :
+            Berikut adalah bantuan untuk kimia :
+            Berikut adalah bantuan untuk matematika :
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-success">OK! Mengerti</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    -->
+    <!--Footer-->
+    <footer>
+        <div class="container padding">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p> &copy; Kelompok 4 RBPL-D </p>
+                	<hr class="light">
+                	<p> Fawwaz | Yosua | Eva | Radya | Hezki </p>
+                	<hr class="light">
+                	<p> Made with love </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
