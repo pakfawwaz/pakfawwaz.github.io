@@ -1,465 +1,689 @@
 <!DOCTYPE html>
-<!-- upto 2 directory depth-->
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Super Folio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    </noscript>
-    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
-  </head>
-  <body id="top">
-    <header class="bg-light">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
-        <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">FWZ</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="page-content">
-      <div id="content">
-<header>
-  <div class="cover bg-light">
-    <div class="container px-3">
-      <div class="row">
-        <div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello"/></div>
-        <div class="col-lg-6">
-          <div class="mt-5">
-            <p class="lead text-uppercase mb-1">Hello!</p>
-            <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Fawwaz Zaini Ahmad</h1>
-            <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">BRILiaN Future Leader Program IT IX</p>
-            <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
-              <nav role="navigation">
-                <ul class="nav justify-content-left">
-                  
-                  <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-                  
-                </ul>
-              </nav>
-            </div>
-            <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i class="fas fa-arrow-right"></i></a></div>
-          </div>
-        </div>
-      </div>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fawwaz Zaini Ahmad — Data Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --paper: #f5f0e8;
+    --accent: #c84b2e;
+    --accent2: #2e6ec8;
+    --muted: #6b6560;
+    --rule: #d4cfc5;
+    --card-bg: #fff;
+  }
+ 
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+  html { scroll-behavior: smooth; }
+ 
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Lora', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+ 
+  /* ── NAV ───────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 3rem;
+    height: 56px;
+    background: rgba(245,240,232,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+  nav .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800; font-size: 1rem;
+    letter-spacing: .04em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  nav ul { list-style: none; display: flex; gap: 2rem; }
+  nav ul a {
+    font-family: 'DM Mono', monospace;
+    font-size: .75rem; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none;
+    transition: color .2s;
+  }
+  nav ul a:hover { color: var(--accent); }
+ 
+  /* ── HERO ──────────────────────────────────────── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 56px;
+  }
+  .hero-text {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 5rem 4rem 5rem 6rem;
+    border-right: 1px solid var(--rule);
+  }
+  .hero-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: .7rem; letter-spacing: .15em; text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1.0;
+    letter-spacing: -.02em;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+  }
+  .hero h1 span { color: var(--accent); }
+  .hero-sub {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 28rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: 'DM Mono', monospace;
+    font-size: .75rem; letter-spacing: .08em; text-transform: uppercase;
+    text-decoration: none;
+    padding: .65rem 1.4rem;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    transition: background .2s, color .2s;
+  }
+  .btn:hover { background: var(--ink); color: var(--paper); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.primary:hover { background: #a83920; border-color: #a83920; }
+ 
+  .hero-right {
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 4rem 4rem 4rem 3rem;
+    position: relative; overflow: hidden;
+  }
+  .hero-stats {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+    border: 1px solid var(--rule);
+    margin-top: auto;
+  }
+  .stat {
+    padding: 1.5rem;
+    border: 1px solid var(--rule);
+  }
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.4rem; font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: .65rem; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--muted);
+    margin-top: .3rem;
+  }
+ 
+  .big-bg-text {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(6rem, 14vw, 12rem);
+    font-weight: 800;
+    color: rgba(200,75,46,.06);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
+ 
+  /* ── SECTION COMMON ─────────────────────────────── */
+  section { padding: 5rem 6rem; border-top: 1px solid var(--rule); }
+  .section-header {
+    display: flex; align-items: baseline; gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .section-num {
+    font-family: 'DM Mono', monospace;
+    font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--accent);
+  }
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: -.02em;
+  }
+  .section-line {
+    flex: 1; height: 1px; background: var(--rule);
+  }
+ 
+  /* ── EXPERIENCE ─────────────────────────────────── */
+  .exp-grid { display: flex; flex-direction: column; gap: 0; }
+  .exp-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .exp-item:last-child { border-bottom: none; }
+  .exp-meta {}
+  .exp-date {
+    font-family: 'DM Mono', monospace;
+    font-size: .7rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted);
+    margin-bottom: .3rem;
+  }
+  .exp-company {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; font-size: .95rem;
+    color: var(--accent2);
+  }
+  .exp-content {}
+  .exp-role {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600; font-size: 1.05rem;
+    margin-bottom: .5rem;
+  }
+  .exp-desc {
+    color: var(--muted);
+    font-size: .92rem;
+  }
+ 
+  /* ── EDUCATION ──────────────────────────────────── */
+  .edu-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
+  .edu-card {
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    padding: 1.8rem;
+  }
+  .edu-year {
+    font-family: 'DM Mono', monospace;
+    font-size: .68rem; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--accent);
+    margin-bottom: .6rem;
+  }
+  .edu-school {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; font-size: 1rem;
+    margin-bottom: .3rem;
+  }
+  .edu-degree {
+    font-size: .88rem; color: var(--muted); font-style: italic;
+  }
+  .edu-detail {
+    font-size: .82rem; color: var(--muted);
+    margin-top: .6rem;
+    font-family: 'DM Mono', monospace;
+  }
+ 
+  /* ── COMPETITIONS ───────────────────────────────── */
+  .comp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+  .comp-card {
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    padding: 1.6rem;
+    display: flex; flex-direction: column; gap: .7rem;
+    position: relative;
+    transition: box-shadow .2s, transform .2s;
+  }
+  .comp-card:hover { box-shadow: 4px 4px 0 var(--accent); transform: translate(-2px,-2px); }
+  .comp-badge {
+    display: inline-flex; align-items: center; gap: .4rem;
+    font-family: 'DM Mono', monospace;
+    font-size: .65rem; text-transform: uppercase; letter-spacing: .08em;
+    padding: .25rem .6rem;
+    border: 1px solid;
+    width: fit-content;
+  }
+  .badge-gold { color: #b8860b; border-color: #b8860b; background: #fdf8e7; }
+  .badge-silver { color: #6b7280; border-color: #9ca3af; background: #f9fafb; }
+  .badge-finalist { color: var(--accent2); border-color: var(--accent2); background: #f0f5ff; }
+  .comp-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; font-size: .98rem;
+    line-height: 1.3;
+  }
+  .comp-org {
+    font-family: 'DM Mono', monospace;
+    font-size: .7rem; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .06em;
+  }
+  .comp-desc { font-size: .84rem; color: var(--muted); line-height: 1.55; }
+  .comp-deck-btn {
+    margin-top: auto;
+    display: inline-flex; align-items: center; gap: .4rem;
+    font-family: 'DM Mono', monospace;
+    font-size: .68rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    padding: .35rem .8rem;
+    width: fit-content;
+    transition: background .2s, color .2s;
+  }
+  .comp-deck-btn:hover { background: var(--accent); color: #fff; }
+  .comp-deck-btn.no-deck { color: var(--rule); border-color: var(--rule); pointer-events: none; }
+ 
+  /* ── PUBLICATIONS ───────────────────────────────── */
+  .pub-list { display: flex; flex-direction: column; gap: 1.5rem; }
+  .pub-item {
+    display: grid; grid-template-columns: 48px 1fr; gap: 1.2rem;
+    align-items: start;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .pub-item:last-child { border-bottom: none; }
+  .pub-num {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800; font-size: 2rem;
+    color: var(--rule);
+    line-height: 1;
+    padding-top: .2rem;
+  }
+  .pub-title {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: .95rem;
+    margin-bottom: .3rem;
+  }
+  .pub-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: .7rem; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .06em;
+  }
+  .pub-doi {
+    font-family: 'DM Mono', monospace;
+    font-size: .68rem; color: var(--accent2);
+    text-decoration: none;
+    display: block; margin-top: .3rem;
+  }
+  .pub-doi:hover { text-decoration: underline; }
+ 
+  /* ── VOLUNTEER ──────────────────────────────────── */
+  .vol-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.2rem; }
+  .vol-card {
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.2rem;
+    background: var(--card-bg);
+  }
+  .vol-org {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; font-size: .9rem;
+    margin-bottom: .2rem;
+  }
+  .vol-role {
+    font-family: 'DM Mono', monospace;
+    font-size: .68rem; color: var(--accent2);
+    text-transform: uppercase; letter-spacing: .07em;
+    margin-bottom: .5rem;
+  }
+  .vol-desc { font-size: .82rem; color: var(--muted); line-height: 1.55; }
+ 
+  /* ── FOOTER ─────────────────────────────────────── */
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 3rem 6rem;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800; font-size: 1.5rem;
+    letter-spacing: -.02em;
+  }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a {
+    font-family: 'DM Mono', monospace;
+    font-size: .7rem; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--muted); text-decoration: none;
+    transition: color .2s;
+  }
+  .footer-links a:hover { color: var(--accent); }
+ 
+  /* ── SCROLL ANIMATIONS ──────────────────────────── */
+  .reveal {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  .reveal.visible { opacity: 1; transform: none; }
+ 
+  /* ── RESPONSIVE ─────────────────────────────────── */
+  @media (max-width: 900px) {
+    nav { padding: 0 1.5rem; }
+    nav ul { gap: 1rem; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-text { padding: 4rem 2rem 2rem; border-right: none; border-bottom: 1px solid var(--rule); }
+    .hero-right { padding: 2rem; }
+    section { padding: 3rem 2rem; }
+    .exp-item { grid-template-columns: 1fr; gap: .5rem; }
+    .edu-grid { grid-template-columns: 1fr; }
+    .comp-grid { grid-template-columns: 1fr; }
+    .vol-grid { grid-template-columns: 1fr; }
+    footer { padding: 2rem; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+ 
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">FZA</a>
+  <ul>
+    <li><a href="#experience">Work</a></li>
+    <li><a href="#competitions">Awards</a></li>
+    <li><a href="#publications">Papers</a></li>
+    <li><a href="#volunteer">Volunteer</a></li>
+    <li><a href="https://www.linkedin.com/in/fawwaz-zaini-ahmad/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+  </ul>
+</nav>
+ 
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <div class="hero-tag">📍 Jakarta, Indonesia &nbsp;·&nbsp; Data Engineer</div>
+    <h1>Fawwaz<br/><span>Zaini</span><br/>Ahmad</h1>
+    <p class="hero-sub">Building data infrastructure at scale — from Core Banking ETL modernization to AI-powered solutions for health, energy, and security.</p>
+    <div class="hero-links">
+      <a class="btn primary" href="https://www.linkedin.com/in/fawwaz-zaini-ahmad/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="#experience">Experience</a>
+      <a class="btn" href="#competitions">Awards & Competitions</a>
     </div>
   </div>
-  <div class="wave-bg"></div>
-</header>
-<div class="section pt-4 px-3 px-lg-4" id="about">
-  <div class="container-narrow">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="h4 my-2">Hello! I’m Fawwaz Zaini Ahmad.</h2>
-        <p>Passionate and Experienced in The Field of Data and Machine Learning.</p>
-        <div class="row mt-3">
-          <div class="col-sm-2">
-            <div class="pb-1">Age:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">22</div>
-          </div>
-          <div class="col-sm-2">
-            <div class="pb-1">Email:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">work.fawwaz@gmail.com</div>
-          </div>
-          <div class="col-sm-2">
-            <div class="pb-1">Phone:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">+0718-111-0011</div>
-          </div>
-          <div class="col-sm-2">
-            <div class="pb-1">Address:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">South Jakarta, Indonesia</div>
-          </div>
-          <div class="col-sm-2">
-            <div class="pb-1">Status:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">Hired</div>
-          </div>
-          <div class="col-sm-2">
-            <div class="pb-1">Current Company:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">Bank Rakyat Indonesia</div>
-          </div>
-        </div>
+  <div class="hero-right">
+    <div class="big-bg-text">DATA</div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">5K+</div>
+        <div class="stat-label">ETLs Mapped</div>
       </div>
-      <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/20220718_110117.jpg" width="400" height="400" alt="Walter Patterson"/></div>
-    </div>
-  </div>
-</div>
-
-<div class="section px-3 px-lg-4 pt-5" id="skills">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">My Skills</h2>
-    </div>
-    <div class="text-center">
-      <p class="mx-auto mb-3" style="max-width:600px">Born In Yogyakarta on the 11th of May 2000, but spend most of his teenagehood studying in Jakarta. Fawwaz graduated from SMAN 61 Jakarta and accepted to Institut Teknologi Sepuluh Nopember through SNMPTN, or otherwise known as 'Invitation Track'.</p>
-    </div>
-    <div class="bg-light p-3">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">HTML5</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">CSS3</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">JavaScript</span><span>80%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">React</span><span>75%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 offset-md-2">
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">PHP</span><span>70%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">WordPress</span><span>70%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">MySQL</span><span>60%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">Photoshop</span><span>60%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
+      <div class="stat">
+        <div class="stat-num">15</div>
+        <div class="stat-label">Servers Upgraded</div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="section px-2 px-lg-4 pt-5" id="portfolio">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Portfolio </h2>
-    </div>
-    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
-      <div class="grid-sizer"></div>
-      <div class="grid-item"><a href="https://dribbble.com">
-          <figure class="portfolio-item"><img src="images/portfolio/1-small.png" data-bp="images/portfolio/1.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">Web Design</h4>
-              <div>Dribbble.com</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://github.com">
-          <figure class="portfolio-item"><img src="images/portfolio/2-small.png" data-bp="images/portfolio/2.jpg" data-caption="Example of an optional caption."/>
-            <figcaption> 
-              <h4 class="h5 mb-0">Web Development</h4>
-              <div>GitHub.com</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://soundcloud.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/3-small.png" data-bp="images/portfolio/3.jpg" data-caption="Example of an optional caption."/>
-            <figcaption> 
-              <h4 class="h5 mb-0">Audio Mixing</h4>
-              <div>Soundcloud.com</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.adobe.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/4-small.png" data-bp="images/portfolio/4.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">Video Editing</h4>
-              <div>Adobe After Effects</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.adobe.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/5-small.png" data-bp="images/portfolio/5.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">Photography</h4>
-              <div>Adobe Photoshop</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.android.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/6-small.png" data-bp="images/portfolio/6.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">App Development</h4>
-              <div>Android</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://flutter.dev/">
-          <figure class="portfolio-item"><img src="images/portfolio/7-small.png" data-bp="images/portfolio/7.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">App Design</h4>
-              <div>Flutter</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://flutter.dev/">
-          <figure class="portfolio-item"><img src="images/portfolio/8-small.png" data-bp="images/portfolio/8.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">App Development</h4>
-              <div>Flutter</div>
-            </figcaption>
-          </figure></a></div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="experience">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Experience</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">UI/UX Design</h3>
-                <div class="text-muted text-small">Designerr Inc. <small>(2012-2014)</small></div>
-              </div><img src="images/services/ui-ux.svg" width="48" height="48" alt="ui-ux"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
+      <div class="stat">
+        <div class="stat-num">3.67</div>
+        <div class="stat-label">GPA (Cum Laude)</div>
       </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">App Development</h3>
-                <div class="text-muted text-small">MakeMyApp LLC. <small>(2015-2018)</small></div>
-              </div><img src="images/services/app-development.svg" width="48" height="48" alt="app development"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">Web Design</h3>
-                <div class="text-muted text-small">Webbie LLC. <small>(2018-2020)</small></div>
-              </div><img src="images/services/web-design.svg" width="48" height="48" alt="web design"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">Full Stack Development</h3>
-                <div class="text-muted text-small">Coder Inc. <small>(2020-2021)</small></div>
-              </div><img src="images/services/full-stack.svg" width="48" height="48" alt="full stack"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="testimonials">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Client Testimonials</h2>
-    </div>
-    <div class="row"> 
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Aiyana</div>
-            <div class="text-small">CEO / Web Design Company</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client1.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Alexander</div>
-            <div class="text-small">CEO / Web Design Company</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client2.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="200">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Ariya</div>
-            <div class="text-small">Web Developer</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client3.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="400">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Braiden</div>
-            <div class="text-small">Web Designer</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client4.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Contact Me</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-        <div class="bg-light my-2 p-3 pt-2"><form action="https://formspree.io/your@email.com"
-    method="POST">
-    <div class="form-group my-2">
-      <label for="name" class="form-label fw-bolder">Name</label>
-      <input class="form-control" type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group my-2">
-      <label for="email" class="form-label fw-bolder">Email</label>
-      <input class="form-control" type="email" id="email" name="_replyto" required>
-    </div>
-  <div class="form-group my-2">
-    <label for="message" class="form-label fw-bolder">Message</label>
-    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
-  </div>
-  <button class="btn btn-primary mt-2" type="submit">Send</button>
-</form>
-        </div>
-      </div>
-      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-        <div class="mt-3 px-1">
-          <div class="h5">Let’s talk how I can help you!</div>
-          <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
-          <p>Or get in touch using my email, skype or my contact number.</p>
-          <p>See you!</p>
-        </div>
-        <div class="mt-53 px-1">
-          <div class="row"> 
-            <div class="col-sm-2">
-              <div class="pb-1">Email:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">walter@company.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Skype:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">username@skype.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Phone:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">+0718-111-0011</div>
-            </div>
-          </div>
-        </div>
+      <div class="stat">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Competitions</div>
       </div>
     </div>
   </div>
 </div>
-<footer class="pt-4 pb-4 text-center bg-light">
-  <div class="container">
-    <div class="my-3">
-      <div class="h4">Fawwaz Zaini Ahmad</div>
-      <p>BRILiaN Future Leader Program IT IX</p>
-      <div class="social-nav">
-        <nav role="navigation">
-          <ul class="nav justify-content-center">
-            <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.behance.net/templateflip" title="Behance"><i class="fab fa-behance"></i><span class="menu-title sr-only">Behance</span></a></li>
-          </ul>
-        </nav>
+ 
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="exp-grid">
+ 
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">Sep 2023 — Present</div>
+        <div class="exp-company">Bank Rakyat Indonesia</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Junior Manager, Enterprise Data Management</div>
+        <p class="exp-desc">EDW Platform Engineering Stream · Business Intelligence Development Team · Data Analytics & Engineering Dept. Led IBM AS400 ETL tuning that reduced Core Banking load and accelerated staging data availability. In 2024, acted as lead engineer for server modernization, upgrading software on 15 servers and significantly reducing security vulnerabilities. Led BRI's first full-scale data warehouse census and lineage initiative — mapping 5,000+ ETLs, 4,000 RDLS reports, and 300 servers.</p>
       </div>
     </div>
-    
-  </div>
-</footer></div>
+ 
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">Mar 2023 — Sep 2023</div>
+        <div class="exp-company">Bank Rakyat Indonesia</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Enterprise Data Management Trainee (BFLP-IT)</div>
+        <p class="exp-desc">Developed dashboards and analytical tools for the Funding & Retail Strategy Division and Mass Funding Division. This project served as the final project for the BFLP-IT management trainee program.</p>
+      </div>
     </div>
-    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
-    <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
-    <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
-    <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
-    <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
-    <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="./scripts/aos.min.js?ver=1.2.0"></script>
-    <script src="./scripts/main.js?ver=1.2.0"></script>
-  </body>
+ 
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">Oct 2022 — Sep 2023</div>
+        <div class="exp-company">Bank Rakyat Indonesia</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Brilian Future Leader Program – IT (BFLP-IT)</div>
+        <p class="exp-desc">Management Trainee Program for IT Specialists. Included 3 months of classical training in Cianjur, 1 month of branch office on-job training, and 8 months of IT division on-job training. Graduates are placed as Junior Managers upon completion.</p>
+      </div>
+    </div>
+ 
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">Aug 2021 — Feb 2022</div>
+        <div class="exp-company">Bank Rakyat Indonesia</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Kampus Merdeka Intern — Data Analyst</div>
+        <p class="exp-desc">Accepted into three Kampus Merdeka internship programs (BRI, Gresik Petrochemicals, DIKTI), choosing BRI for its breadth. Placed in the Data Analytics team of the Mass Funding Division, assisting day-to-day management decision support.</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Education</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-year">2018 — 2022</div>
+      <div class="edu-school">Sepuluh Nopember Institute of Technology (ITS)</div>
+      <div class="edu-degree">Bachelor of Computer (S.Kom), Information Systems</div>
+      <div class="edu-detail">GPA: 3.67 / 4.00 · Cum Laude<br/>Data Engineering & Business Intelligence Lab<br/>Thesis: Deep learning for forest fire forecasting in Borneo</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-year">Aug — Sep 2019</div>
+      <div class="edu-school">Inha University</div>
+      <div class="edu-degree">Summer Exchange Program</div>
+      <div class="edu-detail">Modern Economy of Korea<br/>Basics of Artificial Intelligence</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-year">Jan — Jul 2021</div>
+      <div class="edu-school">Bangkit Academy</div>
+      <div class="edu-degree">Machine Learning Path Cohort</div>
+      <div class="edu-detail">Held by Google, Goto, Traveloka<br/>Capstone: AI-based disaster management tool</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- COMPETITIONS -->
+<section id="competitions">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Awards & Competitions</h2>
+    <div class="section-line"></div>
+  </div>
+  <p class="reveal" style="color:var(--muted);font-family:'DM Mono',monospace;font-size:.78rem;margin-bottom:2rem;letter-spacing:.05em;">
+    CLICK "VIEW DECK" TO SEE COMPETITION DECKS · REPLACE <code>/decks/filename.pdf</code> PATHS IN SOURCE WITH YOUR ACTUAL PDFs
+  </p>
+  <div class="comp-grid">
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-silver">🥈 2nd Place</span>
+      <div class="comp-title">Data Science Week 2023 — Senior Professional Category</div>
+      <div class="comp-org">Data Science Indonesia × Telkomsel</div>
+      <p class="comp-desc">Built a BERT-based model combined with data engineering techniques to map free-text data across ~40 categories with category enrichment. Landed the silver medal in the professional tier.</p>
+      <a class="comp-deck-btn" href="/decks/dsw2023.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-silver">🥈 2nd Place</span>
+      <div class="comp-title">Codig 3.0 2020 — Data Mining Category</div>
+      <div class="comp-org">Mercubuana University</div>
+      <p class="comp-desc">Submitted an improved deep learning paper on public sentiment during New Normal. Added Bi-LSTM and GRU comparisons, and applied the model to unlabeled real-world data.</p>
+      <a class="comp-deck-btn" href="/decks/codig2020.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-gold">🏅 4th Place</span>
+      <div class="comp-title">Gemastik XIV 2021 — Data Mining Category</div>
+      <div class="comp-org">Puspresnas Kemendikbud</div>
+      <p class="comp-desc">Analyzed divergence between news and netizen sentiment on COVID-19 vaccination using LDA & LSTM. Finals involved real-time Named Entity Recognition on a given text dataset.</p>
+      <a class="comp-deck-btn" href="/decks/gemastik2021.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-finalist">Finalist</span>
+      <div class="comp-title">Turnamen Sains Data Nasional 2024</div>
+      <div class="comp-org">Data Academy × Regional Governments</div>
+      <p class="comp-desc">Developed a YOLOv5 object-detection AI to identify Mycobacterium Tuberculosis in Ziehl-Neelsen sputum samples, connected directly to a microscope to accelerate TB diagnosis in remote Indonesia.</p>
+      <a class="comp-deck-btn" href="/decks/tsdn2024.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-finalist">Finalist</span>
+      <div class="comp-title">Science Hackfest 2024 — Carbon Reduction Category</div>
+      <div class="comp-org">Sucofindo</div>
+      <p class="comp-desc">Built an AI-embedded solar panel system that regulates power intake from outside the grid based on meteorological forecasts. Designed as a city-wide electricity management tool.</p>
+      <a class="comp-deck-btn" href="/decks/hackfest2024.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-finalist">Semifinalist</span>
+      <div class="comp-title">BIGMIND 2024</div>
+      <div class="comp-org">MIND.ID</div>
+      <p class="comp-desc">ML tool to predict sub-surface geochemistry conditions from surface geological samples, trained on Queensland government data (Cloncurry area). Most accurate on Copper deposits.</p>
+      <a class="comp-deck-btn" href="/decks/bigmind2024.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-finalist">Finalist</span>
+      <div class="comp-title">AI Datathon 2024</div>
+      <div class="comp-org">BMKG × KORIKA</div>
+      <p class="comp-desc">Combined BMKG meteorological data with Copernicus solar irradiation datasets to map the most profitable regions in Indonesia for solar power plant construction.</p>
+      <a class="comp-deck-btn" href="/decks/datathon2024.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-finalist">Finalist</span>
+      <div class="comp-title">Turnamen Sains Data Nasional 2023</div>
+      <div class="comp-org">Data Academy × Regional Governments</div>
+      <p class="comp-desc">Built a malicious PDF detection tool for Android phones to prevent cyberattacks targeting mobile banking users, themed around AI & Data Science in Cyber Security.</p>
+      <a class="comp-deck-btn" href="/decks/tsdn2023.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+    <div class="comp-card reveal">
+      <span class="comp-badge badge-finalist">Finalist</span>
+      <div class="comp-title">Gemastik XIII 2020 — Data Mining Category</div>
+      <div class="comp-org">Puspresnas Kemendikbud</div>
+      <p class="comp-desc">First-ever data science competition participation. Wrote a paper on multilabel YouTube comment classification (LSTM) during the New Normal era. Finals: operational profit forecasting from tabular data.</p>
+      <a class="comp-deck-btn" href="/decks/gemastik2020.pdf" target="_blank">↗ View Deck</a>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Publications</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="pub-list">
+ 
+    <div class="pub-item reveal">
+      <div class="pub-num">01</div>
+      <div>
+        <div class="pub-title">Sentence Classification Using Machine Learning and Word Embedding: An Innovation in Indonesian Language Learning</div>
+        <div class="pub-meta">Ahmad, F.Z., et al. · 2025 · Journal of Language Teaching & Research, 16(4), 1225</div>
+        <a class="pub-doi" href="https://doi.org/10.17507/jltr.1604.17" target="_blank" rel="noopener">doi.org/10.17507/jltr.1604.17 ↗</a>
+      </div>
+    </div>
+ 
+    <div class="pub-item reveal">
+      <div class="pub-num">02</div>
+      <div>
+        <div class="pub-title">Bagaimana Masyarakat Menyikapi Pembelajaran Tatap Muka: Analisis Komentar pada Media Sosial Youtube Menggunakan Algoritma Deep Learning Sekuensial dan LDA</div>
+        <div class="pub-meta">Ahmad, F.Z., et al. · 2021 · Jurnal Linguistik Komputasional, 4(2)</div>
+        <a class="pub-doi" href="https://doi.org/10.26418/JLK.V4I2.57" target="_blank" rel="noopener">doi.org/10.26418/JLK.V4I2.57 ↗</a>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- VOLUNTEER -->
+<section id="volunteer">
+  <div class="section-header reveal">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Volunteer & Activities</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="vol-grid">
+    <div class="vol-card reveal">
+      <div class="vol-org">Bangkit Academy</div>
+      <div class="vol-role">Instructor · 2024 Intake 1 & 2</div>
+      <p class="vol-desc">Teaches Machine Learning ILT sessions with enriched, practical content beyond provided materials. Ranked among top Bangkit instructors with an average rating of 4.6.</p>
+    </div>
+    <div class="vol-card reveal">
+      <div class="vol-org">Bangkit Academy</div>
+      <div class="vol-role">Mentor · 2023 Intake 2</div>
+      <p class="vol-desc">Managed a class of ~30 cohorts: weekly mentoring, ILT assistance, tracking coursework completion, and 1-on-1 sessions for students needing extra support.</p>
+    </div>
+    <div class="vol-card reveal">
+      <div class="vol-org">BEM FTEIC ITS</div>
+      <div class="vol-role">Head of Competition Oversight · 2021</div>
+      <p class="vol-desc">Led initiatives supporting students in nationwide Puspresnas competitions — organizing training sessions, study materials, coaching programs, and funding management.</p>
+    </div>
+    <div class="vol-card reveal">
+      <div class="vol-org">Society of Renewable Energy ITS</div>
+      <div class="vol-role">Founding Member · 2020–2021</div>
+      <p class="vol-desc">Part of the 1st & 2nd generation committee. Coordinated online webinar operations during early COVID-19, and was part of the viral Imroatus the Alien filter campaign.</p>
+    </div>
+    <div class="vol-card reveal">
+      <div class="vol-org">TEDx ITS 2020</div>
+      <div class="vol-role">Website Manager</div>
+      <p class="vol-desc">Managed the web presence for ITS's second-ever TEDx event. Built a virtual tour experience in Unity Engine to recreate the in-person event experience online during the pandemic.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Fawwaz Zaini Ahmad</div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/fawwaz-zaini-ahmad/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="#experience">Work</a>
+    <a href="#competitions">Awards</a>
+    <a href="#publications">Papers</a>
+    <a href="#volunteer">Volunteer</a>
+  </div>
+</footer>
+ 
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => obs.observe(el));
+</script>
+</body>
 </html>
