@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malaysia Honeymoon</title>
+<meta name="description" content="Honeymoon itinerary options — Kuala Lumpur, 8–14 November 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf7f2; --surface:#ffffff; --ink:#22201c; --muted:#6c655c; --line:#e8dfd3;
+  --teal:#0f6e6a; --teal-soft:#e3f1ef; --coral:#c8553d; --coral-soft:#fbe9e4;
+  --gold:#b8862b; --gold-soft:#f7eedb; --rose:#b04a6f;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16151a; --surface:#201f25; --ink:#f1ece4; --muted:#a69e93; --line:#34323a;
+    --teal:#5fc0b8; --teal-soft:#1d3433; --coral:#ee8a72; --coral-soft:#3a2622;
+    --gold:#e0b45d; --gold-soft:#352d1e; --rose:#e48aab;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+a{color:var(--teal)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.hero{padding:56px 0 32px;border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 12px 12px, var(--gold-soft) 3px, transparent 4px) 0 0/28px 28px;
+}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);font-weight:600}
+h1{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:clamp(34px,6vw,58px);line-height:1.05;margin:10px 0 14px}
+h2{font-family:Fraunces,Georgia,serif;font-size:clamp(24px,3.4vw,32px);margin:0 0 8px}
+h3{font-family:Fraunces,Georgia,serif;font-size:20px;margin:0 0 4px}
+.lede{max-width:680px;color:var(--muted);font-size:17px;margin:0}
+.flights{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:28px}
+.flight{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.flight .tag{font-size:12px;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:.08em}
+.flight .big{font-family:Fraunces,serif;font-size:26px;font-weight:600}
+.flight .sub{color:var(--muted);font-size:14px}
+section{padding:40px 0;border-bottom:1px solid var(--line)}
+.note{color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--surface);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;background:var(--gold-soft)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-top:16px}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.pill.new{background:var(--coral-soft);color:var(--coral)}
+.pill.seen{background:var(--teal-soft);color:var(--teal)}
+.pill.gold{background:var(--gold-soft);color:var(--gold)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 24px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
+.tab{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;border-radius:999px;font:500 14px Inter,sans-serif;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.panel{display:none}
+.panel.active{display:block}
+.vhead{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start;margin-bottom:18px}
+.vhead p{margin:6px 0 0;color:var(--muted);max-width:640px}
+.meta{display:flex;gap:6px;flex-wrap:wrap}
+.day{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:16px 0;border-top:1px dashed var(--line)}
+.day .date{font-weight:600}
+.day .date small{display:block;color:var(--muted);font-weight:400}
+.day .loc{font-size:12px;color:var(--coral);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.day ul{margin:6px 0 0;padding-left:18px}
+.day li{margin:3px 0}
+.tip{background:var(--gold-soft);border-left:3px solid var(--gold);padding:10px 14px;border-radius:8px;font-size:14px;margin-top:14px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.card ul{margin:6px 0 0;padding-left:18px;font-size:15px}
+footer{padding:28px 0 48px;color:var(--muted);font-size:13px}
+@media (max-width:600px){ .day{grid-template-columns:1fr;gap:4px} }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Honeymoon · 8 – 14 November 2026</div>
+    <h1>Malaysia, together.</h1>
+    <p class="lede">Seven ways to spend six nights — every version starts and ends in Kuala Lumpur, keeps the essentials of KL for a first trip abroad, and adds one escape out of the city.</p>
+    <div class="flights">
+      <div class="flight"><div class="tag">Arrive</div><div class="big">QG 502 · 19:10</div><div class="sub">Sun 8 Nov · Jakarta → Kuala Lumpur (KLIA)</div></div>
+      <div class="flight"><div class="tag">Depart</div><div class="big">QG 503 · 20:10</div><div class="sub">Sat 14 Nov · Kuala Lumpur (KLIA) → Jakarta</div></div>
+      <div class="flight"><div class="tag">Time on the ground</div><div class="big">5 full days</div><div class="sub">+ arrival evening and the last day until ~16:30</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="compare">
+  <h2>At a glance</h2>
+  <p class="note">"New for both" = places neither of you has been. Travel times are door-to-door approximations from central KL.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Version</th><th>Getting there</th><th>Nights away</th><th>Vibe</th><th>For you</th></tr></thead>
+    <tbody>
+      <tr><td><b>1 · Langkawi</b></td><td>Fly Subang (SZB) → LGK, ~1h10</td><td>3</td><td>Beaches, islands, sunsets, resort time</td><td><span class="pill seen">Revisit</span></td></tr>
+      <tr><td><b>2 · Melaka</b></td><td>Bus from TBS, ~2h</td><td>2</td><td>Heritage town, river walk, Peranakan food</td><td><span class="pill seen">Revisit</span></td></tr>
+      <tr><td><b>3 · Ipoh</b></td><td>ETS train, ~2h30</td><td>2</td><td>Cave temples, old town, food crawl</td><td><span class="pill new">New for both</span></td></tr>
+      <tr><td><b>4 · Singapore</b></td><td>Fly Subang (SZB) → Changi, ~1h</td><td>3</td><td>City lights, Gardens by the Bay, second country</td><td><span class="pill seen">Revisit</span></td></tr>
+      <tr><td><b>5 · Penang</b></td><td>Fly ~1h, or ETS ~4h + ferry</td><td>3</td><td>Street art, hawker food, Penang Hill</td><td><span class="pill seen">Revisit</span></td></tr>
+      <tr><td><b>6 · Fraser's Hill</b></td><td>Drive / private car, ~2h</td><td>1–2</td><td>Quiet colonial hill station, misty forest</td><td><span class="pill new">New for both</span></td></tr>
+      <tr><td><b>7 · Genting</b></td><td>Bus / car + Awana SkyWay, ~1h15</td><td>2</td><td>Cool air, cable car, theme park</td><td><span class="pill new">New for both</span></td></tr>
+      <tr><td><b>8 · Highlands combo</b></td><td>Private car loop</td><td>3</td><td>Genting + Fraser's in one go</td><td><span class="pill new">Both new</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="kl">
+  <h2>The KL essentials (in every version)</h2>
+  <p class="note">Since it's her first time abroad, every plan keeps these two KL days intact. They're referenced below as <b>KL Day A</b> and <b>KL Day B</b>.</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>KL Day A — the skyline</h3>
+      <ul>
+        <li>Petronas Twin Towers Skybridge &amp; observation deck (book a time slot online in advance)</li>
+        <li>Suria KLCC, KLCC Park and the lake</li>
+        <li>Walk the elevated covered walkway to Pavilion &amp; Bukit Bintang</li>
+        <li>Dinner on Jalan Alor; night photos of the towers from KLCC Park fountain (light show in the evening)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>KL Day B — the old city</h3>
+      <ul>
+        <li>Batu Caves early (before 9:00 — cooler, fewer crowds; 272 rainbow steps)</li>
+        <li>Merdeka Square, Sultan Abdul Samad Building, Masjid Jamek</li>
+        <li>Central Market (batik &amp; souvenirs), Petaling Street, Kwai Chai Hong lane</li>
+        <li>Sunset at KL Tower (Menara KL) sky deck or a rooftop bar/restaurant</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="versions">
+  <h2>The versions</h2>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-t="v1">1 · Langkawi</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="v2">2 · Melaka</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="v3">3 · Ipoh</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="v4">4 · Singapore</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="v5">5 · Penang</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="v6">6 · Fraser's Hill</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="v7">7 · Genting</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="v8">8 · Highlands combo</button>
+  </div>
+
+  <!-- V1 LANGKAWI -->
+  <div class="panel active" id="v1">
+    <div class="vhead">
+      <div><h2>Langkawi — the beach honeymoon</h2><p>Two KL days, then three nights on the island. The most "honeymoon" of the set: sunsets, island hopping, and slow resort mornings.</p></div>
+      <div class="meta"><span class="pill gold">KL 3 nights</span><span class="pill gold">Langkawi 3 nights</span></div>
+    </div>
+    <div class="day"><div class="date">Sun 8<small>Evening</small></div><div><div class="loc">Arrive · KL</div><ul><li>Land 19:10, KLIA Ekspres to KL Sentral (~28 min) or Grab to hotel</li><li>Late easy dinner near the hotel</li></ul></div></div>
+    <div class="day"><div class="date">Mon 9</div><div><div class="loc">KL</div><b>KL Day A</b> — Petronas Towers, KLCC Park, Bukit Bintang, Jalan Alor.</div></div>
+    <div class="day"><div class="date">Tue 10</div><div><div class="loc">KL → Langkawi</div><ul><li>Morning flight Subang (SZB) → Langkawi (Firefly or Batik Air)</li><li>Check in, afternoon by the pool</li><li>Sunset at Pantai Cenang, dinner on the beach strip</li></ul></div></div>
+    <div class="day"><div class="date">Wed 11</div><div><div class="loc">Langkawi</div><ul><li>SkyCab cable car &amp; Sky Bridge early (clearer views, shorter queue)</li><li>Seven Wells waterfall nearby</li><li>Evening: Langkawi night market (location rotates by day)</li></ul></div></div>
+    <div class="day"><div class="date">Thu 12</div><div><div class="loc">Langkawi</div><ul><li>Kilim Geoforest mangrove boat tour (eagle feeding, bat cave)</li><li>Or island-hopping: Pregnant Maiden Lake, Beras Basah island</li><li>Couples spa, then a private sunset cruise (dinner cruise is a nice splurge)</li></ul></div></div>
+    <div class="day"><div class="date">Fri 13</div><div><div class="loc">Langkawi → KL</div><ul><li>Slow breakfast, Tanjung Rhu beach for the morning</li><li>Afternoon flight LGK → SZB, back in KL by evening</li><li>Dinner: KL Tower revolving restaurant or a rooftop</li></ul></div></div>
+    <div class="day"><div class="date">Sat 14<small>Until ~16:30</small></div><div><div class="loc">KL · Depart</div><b>KL Day B (short)</b> — Batu Caves at opening, then Merdeka Square &amp; Central Market for souvenirs. Leave for KLIA by ~16:30.</div></div>
+    <div class="tip">Fly back on the 13th, not the morning of the 14th — Subang is a different airport from KLIA (~1 hour apart), so a same-day connection to QG 503 leaves no buffer if anything is delayed. Langkawi is duty-free, so chocolate and souvenirs are cheap there.</div>
+  </div>
+
+  <!-- V2 MELAKA -->
+  <div class="panel" id="v2">
+    <div class="vhead">
+      <div><h2>Melaka — heritage &amp; Peranakan</h2><p>KL first, then end the trip in Melaka and go straight from Melaka to the airport — no backtracking into the city.</p></div>
+      <div class="meta"><span class="pill gold">KL 4 nights</span><span class="pill gold">Melaka 2 nights</span></div>
+    </div>
+    <div class="day"><div class="date">Sun 8<small>Evening</small></div><div><div class="loc">Arrive · KL</div>Land 19:10, KLIA Ekspres or Grab into the city, late dinner.</div></div>
+    <div class="day"><div class="date">Mon 9</div><div><div class="loc">KL</div><b>KL Day A</b> — skyline day.</div></div>
+    <div class="day"><div class="date">Tue 10</div><div><div class="loc">KL</div><b>KL Day B</b> — Batu Caves &amp; old city.</div></div>
+    <div class="day"><div class="date">Wed 11</div><div><div class="loc">KL · Putrajaya</div><ul><li>Half day in Putrajaya: Putra Mosque (pink mosque) on the lake, bridges, boulevard</li><li>Afternoon: Thean Hou Temple (red lanterns, great photos)</li><li>Evening shopping in Pavilion or Lot 10</li></ul></div></div>
+    <div class="day"><div class="date">Thu 12</div><div><div class="loc">KL → Melaka</div><ul><li>Bus from TBS to Melaka Sentral (~2h), Grab to hotel near Jonker Street</li><li>Dutch Square: Stadthuys, Christ Church, A Famosa, St Paul's Hill</li><li>Melaka River cruise after dark (lit-up riverside)</li></ul></div></div>
+    <div class="day"><div class="date">Fri 13</div><div><div class="loc">Melaka</div><ul><li>Baba &amp; Nyonya Heritage Museum — Peranakan homes, wedding customs, kebaya</li><li>Nyonya lunch: ayam pongteh, laksa, cendol</li><li>Trishaw ride, Menara Taming Sari</li><li>Jonker Walk night market (runs Fri–Sun nights)</li></ul></div></div>
+    <div class="day"><div class="date">Sat 14<small>Until ~15:00</small></div><div><div class="loc">Melaka → KLIA · Depart</div>Breakfast &amp; last stroll, then direct bus/car Melaka → KLIA (~2–2.5h). Aim to be at KLIA by ~17:00.</div></div>
+    <div class="tip">After a Peranakan-style wedding, Melaka's Baba &amp; Nyonya museum will feel very personal — many of the wedding traditions are on display. Book the airport bus or a private car in advance for Saturday.</div>
+  </div>
+
+  <!-- V3 IPOH -->
+  <div class="panel" id="v3">
+    <div class="vhead">
+      <div><h2>Ipoh — cave temples &amp; food</h2><p>New for both of you. An easy train ride to a laid-back town known for limestone cave temples, colonial old town and some of Malaysia's best food.</p></div>
+      <div class="meta"><span class="pill gold">KL 4 nights</span><span class="pill gold">Ipoh 2 nights</span><span class="pill new">New for both</span></div>
+    </div>
+    <div class="day"><div class="date">Sun 8<small>Evening</small></div><div><div class="loc">Arrive · KL</div>Land 19:10, into the city, late dinner.</div></div>
+    <div class="day"><div class="date">Mon 9</div><div><div class="loc">KL</div><b>KL Day A</b> — skyline day.</div></div>
+    <div class="day"><div class="date">Tue 10</div><div><div class="loc">KL</div><b>KL Day B</b> — Batu Caves &amp; old city.</div></div>
+    <div class="day"><div class="date">Wed 11</div><div><div class="loc">KL → Ipoh</div><ul><li>Morning ETS from KL Sentral to Ipoh (~2.5h) — book on the KTMB app</li><li>Ipoh Railway Station (the "Taj Mahal of Ipoh"), Old Town murals</li><li>Concubine Lane, Ipoh white coffee in Old Town</li><li>Dinner: tauge ayam (bean sprout chicken), then Funny Mountain soya bean dessert</li></ul></div></div>
+    <div class="day"><div class="date">Thu 12</div><div><div class="loc">Ipoh</div><ul><li>Kek Lok Tong cave temple &amp; the garden on the other side</li><li>Sam Poh Tong and Perak Cave Temple</li><li>Late afternoon/evening: Lost World of Tambun hot springs (great at night)</li></ul></div></div>
+    <div class="day"><div class="date">Fri 13</div><div><div class="loc">Ipoh → KL</div><ul><li>Optional morning: Gunung Lang park or Mirror Lake (Tasik Cermin)</li><li>Afternoon ETS back to KL</li><li>Evening: Putrajaya night lights or Bukit Bintang</li></ul></div></div>
+    <div class="day"><div class="date">Sat 14<small>Until ~16:30</small></div><div><div class="loc">KL · Depart</div>Thean Hou Temple or souvenir shopping, lunch, leave for KLIA by ~16:30.</div></div>
+    <div class="tip">ETS seats sell out on peak days — book both legs as soon as the dates are fixed. Ipoh's famous dim sum spots are mostly non-halal; look for the halal logo if that matters to you.</div>
+  </div>
+
+  <!-- V4 SINGAPORE -->
+  <div class="panel" id="v4">
+    <div class="vhead">
+      <div><h2>Singapore — two countries in one trip</h2><p>A second passport stamp for her first trip abroad. Fly from Subang to Changi so you skip KLIA crowds.</p></div>
+      <div class="meta"><span class="pill gold">KL 3 nights</span><span class="pill gold">Singapore 3 nights</span></div>
+    </div>
+    <div class="day"><div class="date">Sun 8<small>Evening</small></div><div><div class="loc">Arrive · KL</div>Land 19:10, into the city, late dinner.</div></div>
+    <div class="day"><div class="date">Mon 9</div><div><div class="loc">KL</div><b>KL Day A</b> — skyline day.</div></div>
+    <div class="day"><div class="date">Tue 10</div><div><div class="loc">KL → Singapore</div><ul><li>Morning Firefly flight Subang (SZB) → Changi</li><li>Jewel Changi: Rain Vortex waterfall right after landing</li><li>Evening: Gardens by the Bay — Supertree light show, then Marina Bay Sands light &amp; water show</li></ul></div></div>
+    <div class="day"><div class="date">Wed 11</div><div><div class="loc">Singapore</div><ul><li>Sentosa: cable car, beaches, or Universal Studios if you both like rides</li><li>Evening: Clarke Quay / riverside dinner</li></ul></div></div>
+    <div class="day"><div class="date">Thu 12</div><div><div class="loc">Singapore</div><ul><li>Kampong Glam &amp; Haji Lane, Little India</li><li>Chinatown &amp; Maxwell hawker centre</li><li>Orchard Road, then Merlion Park at night</li></ul></div></div>
+    <div class="day"><div class="date">Fri 13</div><div><div class="loc">Singapore → KL</div><ul><li>Morning: Joo Chiat / Katong — colourful Peranakan shophouses</li><li>Afternoon flight Changi → Subang</li><li>Evening: Jalan Alor or a rooftop in KL</li></ul></div></div>
+    <div class="day"><div class="date">Sat 14<small>Until ~16:30</small></div><div><div class="loc">KL · Depart</div><b>KL Day B (short)</b> — Batu Caves early, Merdeka Square, Central Market. Leave for KLIA by ~16:30.</div></div>
+    <div class="tip">Submit the SG Arrival Card online within 3 days before entering Singapore, and a new Malaysia Digital Arrival Card (MDAC) before re-entering Malaysia. Singapore is noticeably pricier — hawker centres keep food costs sane.</div>
+  </div>
+
+  <!-- V5 PENANG -->
+  <div class="panel" id="v5">
+    <div class="vhead">
+      <div><h2>Penang — street art &amp; hawker heaven</h2><p>George Town's heritage streets, Peranakan mansions, Penang Hill and the best hawker food in the country.</p></div>
+      <div class="meta"><span class="pill gold">KL 3 nights</span><span class="pill gold">Penang 3 nights</span></div>
+    </div>
+    <div class="day"><div class="date">Sun 8<small>Evening</small></div><div><div class="loc">Arrive · KL</div>Land 19:10, into the city, late dinner.</div></div>
+    <div class="day"><div class="date">Mon 9</div><div><div class="loc">KL</div><b>KL Day A</b> — skyline day.</div></div>
+    <div class="day"><div class="date">Tue 10</div><div><div class="loc">KL → Penang</div><ul><li>Morning flight to Penang (~1h; Firefly from Subang) — or ETS to Butterworth + ferry for the scenic route</li><li>George Town walk: street art (Kids on Bicycle), Armenian Street, clan jetties</li><li>Dinner: Gurney Drive or New Lane hawker centre</li></ul></div></div>
+    <div class="day"><div class="date">Wed 11</div><div><div class="loc">Penang</div><ul><li>Pinang Peranakan Mansion (stunning green mansion)</li><li>Khoo Kongsi clan house, Cheong Fatt Tze Blue Mansion</li><li>Late afternoon Penang Hill funicular, The Habitat canopy walk, sunset over the island</li></ul></div></div>
+    <div class="day"><div class="date">Thu 12</div><div><div class="loc">Penang</div><ul><li>Kek Lok Si Temple</li><li>Afternoon at Batu Ferringhi beach; evening Batu Ferringhi night market</li></ul></div></div>
+    <div class="day"><div class="date">Fri 13</div><div><div class="loc">Penang → KL</div><ul><li>Morning café hopping in George Town (nasi kandar breakfast)</li><li>Afternoon flight back</li><li>Evening in Bukit Bintang</li></ul></div></div>
+    <div class="day"><div class="date">Sat 14<small>Until ~16:30</small></div><div><div class="loc">KL · Depart</div><b>KL Day B (short)</b> — Batu Caves, Merdeka Square, Central Market. Leave for KLIA by ~16:30.</div></div>
+    <div class="tip">If you fly into Penang, flying back to KLIA (not Subang) on Friday also works and drops you next to the airport hotel options.</div>
+  </div>
+
+  <!-- V6 FRASER -->
+  <div class="panel" id="v6">
+    <div class="vhead">
+      <div><h2>Fraser's Hill — quiet mountain retreat</h2><p>New for both. A small, sleepy colonial hill station with Tudor-style buildings, cool misty air and jungle trails — very romantic, very quiet.</p></div>
+      <div class="meta"><span class="pill gold">KL 4 nights</span><span class="pill gold">Fraser's 2 nights</span><span class="pill new">New for both</span></div>
+    </div>
+    <div class="day"><div class="date">Sun 8<small>Evening</small></div><div><div class="loc">Arrive · KL</div>Land 19:10, into the city, late dinner.</div></div>
+    <div class="day"><div class="date">Mon 9</div><div><div class="loc">KL</div><b>KL Day A</b> — skyline day.</div></div>
+    <div class="day"><div class="date">Tue 10</div><div><div class="loc">KL</div><b>KL Day B</b> — Batu Caves &amp; old city.</div></div>
+    <div class="day"><div class="date">Wed 11</div><div><div class="loc">KL → Fraser's Hill</div><ul><li>Private car / Grab (~2h) via Kuala Kubu Bharu — stop at the Sungai Selangor Dam viewpoint</li><li>Clock tower, the village green, Allan's Water lake</li><li>Afternoon tea &amp; dinner by the fireplace (Ye Olde Smokehouse is the classic)</li></ul></div></div>
+    <div class="day"><div class="date">Thu 12</div><div><div class="loc">Fraser's Hill</div><ul><li>Early morning birdwatching walk (one of Asia's best birding spots)</li><li>Jeriau Waterfall, Hemmant or Bishop's trail</li><li>Horse riding or archery at the park; cosy evening</li></ul></div></div>
+    <div class="day"><div class="date">Fri 13</div><div><div class="loc">Fraser's → KL</div><ul><li>Morning mist and breakfast, drive down by noon</li><li>Afternoon: Thean Hou Temple; evening Putrajaya or Bukit Bintang</li></ul></div></div>
+    <div class="day"><div class="date">Sat 14<small>Until ~16:30</small></div><div><div class="loc">KL · Depart</div>Last shopping and lunch, leave for KLIA by ~16:30.</div></div>
+    <div class="tip">There's no practical public transport — book a driver for both ways (and ask them to wait or return). The last stretch is a narrow, winding road; take motion-sickness tablets if either of you gets carsick. Food options are limited, so lean on your hotel. Bring a light jacket — it's ~18–24°C.</div>
+  </div>
+
+  <!-- V7 GENTING -->
+  <div class="panel" id="v7">
+    <div class="vhead">
+      <div><h2>Genting Highlands — cool air &amp; cable cars</h2><p>New for both. Close to KL, easy to reach, and lively: a long cable car through the clouds, a theme park, and cool mountain air.</p></div>
+      <div class="meta"><span class="pill gold">KL 4 nights</span><span class="pill gold">Genting 2 nights</span><span class="pill new">New for both</span></div>
+    </div>
+    <div class="day"><div class="date">Sun 8<small>Evening</small></div><div><div class="loc">Arrive · KL</div>Land 19:10, into the city, late dinner.</div></div>
+    <div class="day"><div class="date">Mon 9</div><div><div class="loc">KL</div><b>KL Day A</b> — skyline day.</div></div>
+    <div class="day"><div class="date">Tue 10</div><div><div class="loc">KL</div><b>KL Day B</b> — Batu Caves &amp; old city.</div></div>
+    <div class="day"><div class="date">Wed 11</div><div><div class="loc">KL → Genting</div><ul><li>Bus from KL Sentral / TBS or Grab to Awana (~1h), then Awana SkyWay cable car up</li><li>Stop at Chin Swee Caves Temple (mid-station) on the way</li><li>Evening: SkyAvenue mall, indoor attractions, dinner with a view</li></ul></div></div>
+    <div class="day"><div class="date">Thu 12</div><div><div class="loc">Genting</div><ul><li>Genting SkyWorlds theme park (outdoor) — go at opening</li><li>Or a slower day: Genting Strawberry Leisure Farm, Sky Casino views, spa</li></ul></div></div>
+    <div class="day"><div class="date">Fri 13</div><div><div class="loc">Genting → KL</div><ul><li>Genting Highlands Premium Outlets on the way down</li><li>Back in KL by afternoon; evening Putrajaya lights or Jalan Alor</li></ul></div></div>
+    <div class="day"><div class="date">Sat 14<small>Until ~16:30</small></div><div><div class="loc">KL · Depart</div>Thean Hou Temple or last shopping, leave for KLIA by ~16:30.</div></div>
+    <div class="tip">Weekdays (Wed–Fri) are much quieter than weekends up there — this plan uses that. It's 16–23°C and often foggy; bring a jacket. Check SkyWay operating status on the day, as it can pause in bad weather.</div>
+  </div>
+
+  <!-- V8 COMBO -->
+  <div class="panel" id="v8">
+    <div class="vhead">
+      <div><h2>Highlands combo — Genting + Fraser's</h2><p>Both new destinations in one loop by private car, while keeping the KL essentials. More driving, more variety.</p></div>
+      <div class="meta"><span class="pill gold">KL 3 nights</span><span class="pill gold">Genting 1</span><span class="pill gold">Fraser's 2</span><span class="pill new">Both new</span></div>
+    </div>
+    <div class="day"><div class="date">Sun 8<small>Evening</small></div><div><div class="loc">Arrive · KL</div>Land 19:10, into the city, late dinner.</div></div>
+    <div class="day"><div class="date">Mon 9</div><div><div class="loc">KL</div><b>KL Day A</b> — skyline day.</div></div>
+    <div class="day"><div class="date">Tue 10</div><div><div class="loc">KL → Genting</div><ul><li>Batu Caves first thing (it's on the way), then up to Genting via Awana SkyWay</li><li>Chin Swee Temple, SkyAvenue, evening up in the clouds</li></ul></div></div>
+    <div class="day"><div class="date">Wed 11</div><div><div class="loc">Genting → Fraser's Hill</div><ul><li>Morning SkyWorlds or strawberry farm</li><li>Afternoon drive to Fraser's (~2.5h) via Kuala Kubu Bharu</li><li>Fireside dinner</li></ul></div></div>
+    <div class="day"><div class="date">Thu 12</div><div><div class="loc">Fraser's Hill</div>Birding walk, Jeriau Waterfall, Allan's Water, slow afternoon.</div></div>
+    <div class="day"><div class="date">Fri 13</div><div><div class="loc">Fraser's → KL</div>Drive down by noon; afternoon Merdeka Square, Central Market, Petaling Street; KL Tower at sunset.</div></div>
+    <div class="day"><div class="date">Sat 14<small>Until ~16:30</small></div><div><div class="loc">KL · Depart</div>Putrajaya on the way to the airport (it's en route to KLIA), then check in.</div></div>
+    <div class="tip">Hire one car-with-driver for Tue–Fri instead of separate Grabs — easier on mountain roads and lets you stop wherever you like.</div>
+  </div>
+</section>
+
+<section id="practical">
+  <h2>Before you go</h2>
+  <div class="grid2">
+    <div class="card"><h3>Entry</h3><ul>
+      <li>Indonesian passports: visa-free for Malaysia and Singapore; passport valid 6+ months</li>
+      <li>Fill the Malaysia Digital Arrival Card (MDAC) online within 3 days before arrival</li>
+      <li>Singapore version: SG Arrival Card, also within 3 days</li>
+    </ul></div>
+    <div class="card"><h3>Getting around</h3><ul>
+      <li>Grab for almost everything; KLIA Ekspres between KLIA and KL Sentral</li>
+      <li>Touch 'n Go card for LRT/MRT/monorail and buses</li>
+      <li>eSIM or a local SIM at the airport (Hotlink, Celcom, U Mobile)</li>
+    </ul></div>
+    <div class="card"><h3>Pack</h3><ul>
+      <li>Plug adapter — Malaysia &amp; Singapore use the UK 3-pin (type G)</li>
+      <li>Compact umbrella: November afternoons often bring thunderstorms</li>
+      <li>Light jacket for Genting / Fraser's and for icy malls</li>
+      <li>Covered shoulders/knees for temples and mosques</li>
+    </ul></div>
+    <div class="card"><h3>Book ahead</h3><ul>
+      <li>Petronas Skybridge time slot</li>
+      <li>Domestic flights (Langkawi / Singapore / Penang) and ETS train seats</li>
+      <li>Drivers for Fraser's Hill or the highlands combo</li>
+      <li>One special dinner — rooftop or sunset cruise</li>
+    </ul></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">Made for a honeymoon · 8–14 November 2026. Opening hours, schedules and entry rules change — double-check a few days before.</footer>
+
+<script>
+const tabs=document.querySelectorAll('.tab');
+function show(id){
+  tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset.t===id));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===id));
+}
+tabs.forEach(t=>t.addEventListener('click',()=>{show(t.dataset.t);history.replaceState(null,'','#'+t.dataset.t);}));
+if(/^#v[1-8]$/.test(location.hash)) show(location.hash.slice(1));
+</script>
+</body>
+</html>
